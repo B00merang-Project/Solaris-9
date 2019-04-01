@@ -1,0 +1,170 @@
+style "arrow" {
+	# UP
+	engine "pixmap" {
+    image
+    {
+      function		= ARROW
+      state		= NORMAL
+      recolorable	= TRUE
+      overlay_file	= "arrow/arrow-up-combo.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= UP
+    }
+    image
+    {
+      function		= ARROW
+      state		= PRELIGHT
+      recolorable	= TRUE
+      overlay_file	= "arrow/arrow-up-combo.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= UP
+    }
+    image
+    {
+      function		= ARROW
+      state		= ACTIVE
+      recolorable	= TRUE
+      overlay_file	= "arrow/arrow-up-active-combo.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= UP
+    }
+    image
+    {
+      function		= ARROW
+      state		= INSENSITIVE
+      recolorable	= TRUE
+      overlay_file	= "arrow/arrow-up-combo.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= UP
+    }
+	
+	# DOWN
+    image
+    {
+      function		= ARROW
+      state		= NORMAL
+      recolorable	= TRUE
+      #overlay_file	= "arrow/arrow-down-combo.png"
+      overlay_file	= "img/comboButtonArrowDown.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function		= ARROW
+      state		= PRELIGHT
+      recolorable	= TRUE
+      #overlay_file	= "arrow/arrow-down-combo.png"
+      overlay_file	= "img/comboButtonArrowDown.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function		= ARROW
+      state		= ACTIVE
+      recolorable	= TRUE
+      #overlay_file	= "arrow/arrow-down-active-combo.png"
+      overlay_file	= "img/comboButtonArrowDownPressed.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    image
+    {
+      function		= ARROW
+      state		= INSENSITIVE
+      recolorable	= TRUE
+      #overlay_file	= "arrow/arrow-down-combo.png"
+      overlay_file	= "img/comboButtonArrowDown.png"
+      overlay_border	= { 0, 0, 0, 0 }
+      overlay_stretch	= FALSE
+      arrow_direction	= DOWN
+    }
+    
+    image # used for dialog bg. in apps. like Inkscape 
+    {
+     function		= BOX
+     recolorable	= TRUE
+     file        	= "null.png"
+     border      	= { 2, 2, 2, 2 }
+     stretch         	= TRUE
+     }
+	}
+}
+
+
+#button that doesnt go in / colors when pressed
+style "buttonoutonly"
+{
+	engine "pixmap" 
+    {
+### Button ### 
+
+## Normal
+		image 
+		{
+			function = BOX
+			state = NORMAL
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+## Prelight
+		image 
+		{
+			function = BOX
+			state = PRELIGHT
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+
+## Insensitive
+		image 
+		{
+			function = BOX
+			state = INSENSITIVE
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+
+## Active
+		image 
+		{
+			function = BOX
+			state = ACTIVE
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+
+### Focus ###
+		image 
+		{
+			function = FOCUS
+			file = "null.png"
+		}
+    }
+}
+
+
+
+
+class "GtkArrow*" style "arrow"
+#button on combobox doesnt color when pressed down, only the arrow triangle presses down 
+#see cde calendar/timezone
+widget_class "*Combo*.*Button*" style "buttonoutonly"
+#widget_class "*Combo*" style "comboboxstyle"
+
+
+
+
+

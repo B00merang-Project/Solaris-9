@@ -1,0 +1,1454 @@
+#bottom-gap.png
+#left-gap.png
+#progressBackground1.png
+#progressBarTrough1.png
+#radio.png
+#radioPressed.png
+#resizer.png
+#right-gap.png
+#spinnerButtonUp.png
+#tab-bottom-active.png
+#tab-bottom.png
+#tab-left-active.png
+#tab-left.png
+#tab-right-active.png
+#tab-right.png
+#tab-top-active.png
+#tab-top.png
+#top-gap.png
+
+########################################################################
+# adapted from HP-UXMotif  / Adwaita
+# Jos van Riswick 2017 / josvanr@gmail.com
+# GPL3
+########################################################################
+
+#gtk_color_scheme = "fg_color:#000\nbg_color:#C5B2A8\nbase_color:#A8978F\ntext_color:#000\nselected_bg_color:#ECA770\nselected_fg_color:#000\ntooltip_bg_color:#ffffe1\ntooltip_fg_color:#000"
+#gtk-icon-sizes ="gtk-small-toolbar=16,16:gtk-large-toolbar=24,24:gtk-button=16,16"
+
+
+##################################################################
+##################################################################
+#WRITTEN BY MOTIFCOLORS OR CDEPANEL SCRIPT FOR CURRENT CDE PALETTE
+include "cdecolors.rc"
+##################################################################
+##################################################################
+
+style "styleScrollbar" {
+	#also scrollbar slider width
+	#the trought will be put around that, so 2 px wider. In HPUX the 2 sidepixels of the 
+	#slider were transparent, in order to make possible a 2px border trough
+	GtkRange::slider-width = 11
+	#height of the stepper (for vertical). The arrow is 11x11px. But CDE has
+	#1 pix of sel color between the stepper and slider, so I added an extra pixel
+	#under the base of the arrow (in sel color) So this has to be 12:
+   	GtkRange::stepper-size = 12
+	#why is this here?
+	GtkCheckButtonClass::indicator-size = 14
+   	GtkRadioButtonClass::indicator-size = 14
+	engine "pixmap" {
+		image {
+		    function = BOX
+		    detail = "trough"
+		    #file = "scrollbar/trough.png"
+		    file = "img/scrollbarTrough.png"
+		    border = {3, 3, 3, 3}
+		    stretch = TRUE
+		    orientation = VERTICAL
+		}
+		image {
+		    function = BOX
+		    detail = "trough"
+		    #file = "scrollbar/trough.png"
+		    file = "img/scrollbarTrough.png"
+		    border = {3, 3, 3, 3}
+		    stretch = TRUE
+		    orientation = HORIZONTAL
+		}
+		image {
+		    function = SLIDER
+		       #file = "scrollbar/scrollbar_horizontal.png"
+		    file = "img/scrollbarSlider.png"
+		    border = {3, 3, 3, 3}
+		    stretch = TRUE
+		    orientation = HORIZONTAL
+			}
+		image {
+		    function = SLIDER
+		    #file = "scrollbar/scrollbar_vertical.png"
+		    file = "img/scrollbarSlider.png"
+		    border = {3, 3, 3, 3}
+		    stretch = TRUE
+		    orientation = VERTICAL
+		}
+		image {
+		    function = ARROW
+		    state = NORMAL
+	#hier
+		    #overlay_file = "scrollbar/arrow_up.png"
+		    overlay_file = "img/scrollbarArrowUp.png"
+		    #using transparent images is not really handy because there is another 
+		    #default button under that, not clean background
+		    #overlay_file = "img/scrollbarArrowUp.transparent.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = UP
+		}
+		image {
+		    function = ARROW
+		    state = PRELIGHT
+		    #overlay_file = "scrollbar/arrow_up.png"
+		    overlay_file = "img/scrollbarArrowUp.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = UP
+		}
+		image {
+		    function = ARROW
+		    state = INSENSITIVE
+		    #overlay_file = "scrollbar/arrow_up.png"
+		    overlay_file = "img/scrollbarArrowUp.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = UP
+		}
+		image {
+		    function = ARROW
+		    state = ACTIVE
+		    #overlay_file = "scrollbar/arrow_up_clicked.png"
+		    overlay_file = "img/scrollbarArrowUpPressed.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = UP
+		}
+		image {
+		    function = ARROW
+		    state = NORMAL
+		    #overlay_file = "scrollbar/arrow_down.png"
+		    overlay_file = "img/scrollbarArrowDown.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = DOWN
+		}
+		image {
+		    function = ARROW
+		    state = PRELIGHT
+		    #overlay_file = "scrollbar/arrow_down.png"
+		    overlay_file = "img/scrollbarArrowDown.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = DOWN
+		}
+		image {
+		    function = ARROW
+		    state = INSENSITIVE
+		    #overlay_file = "scrollbar/arrow_down.png"
+		    overlay_file = "img/scrollbarArrowDown.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = DOWN
+		}
+		image {
+		    function = ARROW
+		    state = ACTIVE
+		    #overlay_file = "scrollbar/arrow_down_clicked.png"
+		    overlay_file = "img/scrollbarArrowDownPressed.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = DOWN
+		}
+		image {
+		    function = ARROW
+		    state = NORMAL
+		    #overlay_file = "scrollbar/arrow_left.png"
+		    overlay_file = "img/scrollbarArrowLeft.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = LEFT
+		}
+		image {
+		    function = ARROW
+		    state = PRELIGHT
+		    #overlay_file = "scrollbar/arrow_left.png"
+		    overlay_file = "img/scrollbarArrowLeft.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = LEFT
+		}
+		image {
+		    function = ARROW
+		    state = INSENSITIVE
+		    #overlay_file = "scrollbar/arrow_left.png"
+		    overlay_file = "img/scrollbarArrowLeft.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = LEFT
+		}
+		image {
+		    function = ARROW
+		    state = ACTIVE
+		    #overlay_file = "scrollbar/arrow_left_clicked.png"
+		    overlay_file = "img/scrollbarArrowLeftPressed.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = LEFT
+		}
+		image {
+		    function = ARROW
+		    state = NORMAL
+		    #overlay_file = "scrollbar/arrow_right.png"
+		    overlay_file = "img/scrollbarArrowRight.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = RIGHT
+		}
+		image {
+		    function = ARROW
+		    state = PRELIGHT
+		    #overlay_file = "scrollbar/arrow_right.png"
+		    overlay_file = "img/scrollbarArrowRight.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = RIGHT
+		}
+		image {
+		    function = ARROW
+		    state = INSENSITIVE
+		    #overlay_file = "scrollbar/arrow_right.png"
+		    overlay_file = "img/scrollbarArrowRight.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = RIGHT
+		}
+		image {
+		    function = ARROW
+		    state = ACTIVE
+		    #overlay_file = "scrollbar/arrow_right_clicked.png"
+		    overlay_file = "img/scrollbarArrowRightPressed.png"
+		    overlay_stretch = FALSE
+		    arrow_direction = RIGHT
+		}    
+	} #engine pixmap
+} #style scrollbar
+
+
+style "styleRange"
+{
+	GtkRange::slider_width = 13
+	#what  determines the length?? The png seems to be stretched in lenght 
+	#a couple of pixels. 
+	engine "pixmap" {
+		image {
+			function = BOX
+			detail = "trough"
+			#file = "scale/trough-horiz.png"
+			file = "img/scrollbarTrough.png"
+			#border = {3, 3, 9, 9}
+            		border = {3, 3, 3, 3}
+			stretch	= TRUE
+			orientation	= HORIZONTAL
+		}
+		image {
+			function = BOX
+			detail = "trough"
+			#file = "scale/trough-vert.png"
+			file = "img/scrollbarTrough.png"
+            		border = {3, 3, 3, 3}
+			#border = {9, 9, 3, 3}
+			stretch	= TRUE
+			orientation	= VERTICAL
+		}
+		image {
+			function = SLIDER
+			#overlay_file = "scale/slider-horiz.png"
+			file = "img/rangeSliderHorizontal.png"
+			stretch	= TRUE
+			orientation	= HORIZONTAL
+		}
+		image {
+			function = SLIDER
+			#overlay_file = "scale/slider-vert.png"
+			file = "img/rangeSliderVertical.png"
+			#overlay_stretch	= FALSE
+			orientation	= VERTICAL
+		}
+		#aha this is the focus line around widget . Was disabled by setting to null.
+		#In CDE this is orange so keep (set in "default" style)
+		#image {
+			#function = FOCUS
+			#file = "null.png"
+		#} 
+	}
+}
+
+
+style "styleNotebook" {
+	#thickness leads to the selected notebook getting drawn larger.. (aha?)
+	xthickness = 2
+	ythickness = 2
+  	GtkNotebook::tab-overlap = 4
+
+	#some pixel trouble in this department but how to solve...?
+	engine "pixmap" 
+	{
+		#this seems to be unnecessary (or defined also elswhere)
+		image {
+			function = BOX
+			file = "img/notebook.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+		      }
+		image {
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabTop.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_side = BOTTOM
+		}
+		image {
+			function = EXTENSION
+			file = "img/notebookTabTopActive.png"
+			border = {1, 1, 1, 1}
+			stretch = TRUE
+			gap_side = BOTTOM
+		}
+		image {
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabBottom.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+		image {
+			function = EXTENSION
+			file = "img/notebookTabBottomActive.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+		image {
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabLeft.png"
+			border = {1,1,1,1}
+			stretch	= TRUE
+			gap_side = RIGHT
+		}
+		image {
+			function = EXTENSION
+			file = "img/notebookTabLeftActive.png"
+			border = {1, 1, 1, 1}
+			stretch = TRUE
+			gap_side = RIGHT
+		}
+    		image {
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabRight.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+		image {
+			function = EXTENSION
+			file = "img/notebookTabRightActive.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+		#note this represents open area in the box not in the tab
+		#if this is not present, the entire box is drawn by default
+		#drawer not by pixmap. the pixmaps in the box then have no 
+		#effect
+		image {
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_file = "img/notebookTopGap.png"
+			gap_border = {1, 1, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = TOP
+		}
+		image {
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_file = "img/notebookBottomGap.png"
+			gap_border = {1, 1, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = BOTTOM
+		      }
+		image {
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_file = "img/notebookLeftGap.png"
+			gap_border = {0, 0, 1, 1}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = LEFT
+      		}
+		image {
+			function = BOX_GAP
+			file = "img/notebook.png" 
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			gap_file = "img/notebookRightGap.png"
+			gap_border = {0, 0, 1, 1}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = RIGHT
+		}
+		#image {
+			#function = FOCUS
+			#file = "null.png"
+			#border = {1, 1, 1, 1}
+			#stretch = TRUE
+		#}
+	}
+}
+
+
+style "styleButton" {
+	engine "pixmap" {
+		image {
+			function = BOX
+			state = NORMAL
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = PRELIGHT
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = ACTIVE
+			file = "img/buttonPressed.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		#image {
+			#function = FOCUS
+			#file = "null.png"
+		#}
+	}
+}
+
+
+style "styleRadioButton" {
+	engine "pixmap" {
+		image {
+			function = CHECK
+			shadow = OUT
+			#overlay_file = "radio/radio.png"
+			overlay_file = "img/radioButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = CHECK
+			shadow = IN
+			#overlay_file = "radio/radio-pressed.png"
+			overlay_file = "img/radioButtonPressed.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = OPTION
+			shadow = OUT
+			#overlay_file = "radio/radio.png"
+			overlay_file = "img/radioButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = OPTION
+			shadow = IN
+			#overlay_file = "radio/radio-pressed.png"
+			overlay_file = "img/radioButtonPressed.png"
+			overlay_stretch = FALSE
+		}
+	}
+}
+
+
+style "styleCheckBox" {
+	engine "pixmap" 
+	{
+		image {
+			function = CHECK
+			shadow = OUT
+			#overlay_file = "c_box/c_box.png"
+			overlay_file = "img/checkButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = CHECK
+			shadow = IN
+			#overlay_file = "c_box/c_box-pressed.png"
+			overlay_file = "img/checkButtonPressed.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = OPTION
+			shadow = OUT
+			#overlay_file = "c_box/c_box.png"
+			overlay_file = "img/checkButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = OPTION
+			shadow = IN
+			#overlay_file = "c_box/c_box-pressed.png"
+			overlay_file = "img/checkButtonPressed.png"
+			overlay_stretch = FALSE
+		}
+	}
+}
+
+
+style "styleProgressBar" {
+	GtkProgressBar ::shadow-type = GTK_SHADOW_NONE
+	GtkProgressBar::min-horizontal-bar-height = 15
+	GtkProgressBar::min-vertical-bar-width = 15
+	#man..
+	xthickness = 1
+	ythickness = 1
+	#bg[NORMAL] = "#A8978F"
+	#bg[SELECTED] = @selected_bg_color
+	engine "pixmap" {
+		image {
+			function = BOX
+			detail = "trough"
+			#file = "progressbar/trough.png"
+            		file = "img/progressBarTrough.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			orientation	= HORIZONTAL
+		}
+		image {
+			function = BOX
+			detail = "trough"
+			#file = "progressbar/trough.png"
+            		file = "img/progressBarTrough.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+			orientation	= VERTICAL
+		}
+		image {
+			function = SHADOW
+			shadow = IN
+			#file = "progressbar/trough-tree.png"
+            		file = "img/progressBarTrough.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+		}
+		image {
+			function = BOX
+			detail = "bar"
+			#file = "progressbar/progressbar.png"
+            		file = "img/progressBackground.png"
+			border = {1, 1, 1, 1}
+			stretch	= TRUE
+			orientation	= HORIZONTAL
+		}
+		image {
+			function = BOX
+			detail = "bar"
+			#file = "progressbar/progressbar.png"
+            		file = "img/progressBackground.png"
+			border = {1, 1, 1, 1}
+			stretch = TRUE
+			orientation	= VERTICAL
+		}
+		image {
+			function = BOX
+			state = SELECTED
+			border = {1, 1, 1, 1}
+			#file = "progressbar/progressbar.png"
+            		file = "img/progressBackground.png"
+			stretch	= TRUE
+		}
+	}
+}
+
+style "styleStatusBar" {
+	#grip in the bottom right corner to resize a box
+	engine "pixmap" {
+		image {
+			function = RESIZE_GRIP
+			detail = "statusbar"
+			overlay_file = "img/resizer.png"
+			overlay_stretch	= FALSE
+		}
+	}
+}
+
+
+style "styleEntry" {
+	GtkEntry::inner-border = {1, 1, 1, 1}
+	engine "pixmap" {
+		image {
+			function = SHADOW
+			detail = "entry"
+			#file = "entry/entry.png"
+			file = "img/entryInnerBorder.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+		}
+	}
+}
+
+style "styleSpinButton"    {
+	engine "pixmap" {
+		image {
+			function = BOX
+			detail = "spinbutton"
+			#file = "button/button-spin.png"
+			file = "img/button.png"
+			border = {4, 4, 4, 4}
+			stretch	= TRUE
+		}
+		#???
+		image {
+			function = ARROW
+		}
+		image {
+			function = BOX
+			state = NORMAL
+			detail = "spinbutton_up"
+			#overlay_file = "arrow/arrow-up.png"
+			overlay_file = "img/spinButtonUp.png"
+			#aha the image is 'overlayed' only transparent image with for black and white pixels
+			#for transparent alpha=50overlay white corresponts to ts color black for bs color
+			#overlay_file = "../img/arrowup.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = PRELIGHT
+      			detail = "spinbutton_up"
+			#overlay_file = "arrow/arrow-up.png"
+			overlay_file = "img/spinButtonUp.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			detail = "spinbutton_up"
+			#overlay_file = "arrow/arrow-up-disable.png"
+			overlay_file = "img/spinButtonUp.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = ACTIVE
+			detail = "spinbutton_up"
+			#overlay_file = "arrow/arrow-up.png"
+			overlay_file = "img/spinButtonUpPressed.png"
+			overlay_stretch	= FALSE
+		}    
+		image {
+			function = BOX
+			state = NORMAL
+			detail = "spinbutton_down"
+			#overlay_file = "arrow/arrow-down.png"
+			overlay_file = "img/spinButtonDown.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = PRELIGHT
+			detail = "spinbutton_down"
+			#overlay_file = "arrow/arrow-down.png"
+			overlay_file = "img/spinButtonDown.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			detail = "spinbutton_down"
+			#overlay_file = "arrow/arrow-down-disable.png"
+			overlay_file = "img/spinButtonDown.png"
+			overlay_stretch	= FALSE
+		}
+		image {
+			function = BOX
+			state = ACTIVE
+			detail = "spinbutton_down"
+			#overlay_file = "arrow/arrow-down.png"
+			overlay_file = "img/spinButtonDownPressed.png"
+			overlay_stretch	= FALSE
+		}
+  	}
+}
+
+
+style "styleArrowBeam" {
+	engine "pixmap" {
+		#cant test the 'up' arrow.. where does it appear?
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamUpPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		# DOWN
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamDownPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowBeamDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		# used for dialog bg. in apps. like Inkscape 
+		image {
+			function		= BOX
+			recolorable	= TRUE
+			file        	= "null.png"
+			border      	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+		}
+	}
+}
+
+style "styleArrow" {
+	engine "pixmap" {
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowUpPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowUp.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDownPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= LEFT
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= LEFT
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDownPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= LEFT
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= LEFT
+		}
+		image {
+			function		= ARROW
+			state		= NORMAL
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= RIGHT
+		}
+		image {
+			function		= ARROW
+			state		= PRELIGHT
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= RIGHT
+		}
+		image {
+			function		= ARROW
+			state		= ACTIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDownPressed.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= RIGHT
+		}
+		image {
+			function		= ARROW
+			state		= INSENSITIVE
+			recolorable	= TRUE
+			overlay_file	= "img/arrowDown.png"
+			overlay_border	= { 0, 0, 0, 0 }
+			overlay_stretch	= FALSE
+			arrow_direction	= RIGHT
+		}
+		# used for dialog bg. in apps. like Inkscape 
+		image {
+			function		= BOX
+			recolorable	= TRUE
+			file        	= "null.png"
+			border      	= { 2, 2, 2, 2 }
+			stretch         	= TRUE
+		}
+	}
+}
+
+
+#button that doesnt go in / colors when pressed
+style "styleButtonOutsetOnly" {
+	engine "pixmap" {
+		image {
+			function = BOX
+			state = NORMAL
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = PRELIGHT
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		image {
+			function = BOX
+			state = ACTIVE
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+		#image {
+			#function = FOCUS
+			#file = "null.png"
+		#}
+    }
+}
+
+
+style "styleOutsetGreen" {
+	fg[NORMAL] = "#fff"
+	fg[PRELIGHT] = "#fff"
+	fg[INSENSITIVE] = shade (0.5, "#4991A6")
+	engine "pixmap" {
+		image {
+			function = BOX
+			#file = "menubar/menubar.png"
+			file = "img/button.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+		}
+	}
+}
+
+
+style "styleInsetGreen" {
+	engine "pixmap" {
+		image {
+			function = BOX
+			#file = "menubar/menubarmenuitem.png"
+			file = "img/buttonPressed.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+		}
+		image {
+			function = HLINE
+			 #file = "menubar/line-h.png"
+	 		file = "img/separatorHorizontal.png"
+			border = {0, 0, 0, 0}
+			stretch = TRUE
+		}
+		image {
+			function = VLINE
+			 #file = "menubar/line-v.png"
+	 		file = "img/separatorVertical.png"
+			border = {0, 0, 0, 0}
+			stretch = TRUE
+		}
+		image {
+			function = ARROW
+			#overlay_file = "/arrow/arrow-up.png"
+			#overlay_file = "../img/arrowup.png"
+			overlay_file = "img/arrowUp.png"
+			overlay_border = {3,3,3,3}
+			overlay_stretch = FALSE
+			arrow_direction	= UP
+		}
+		image {
+			function = ARROW
+			#overlay_file = "/arrow/arrow-down.png"
+			overlay_file = "img/arrowDown.png"
+			overlay_border = {3,3,3,3}
+			overlay_stretch	= FALSE
+			arrow_direction	= DOWN
+		}
+		image {
+			function = ARROW
+			#overlay_file = "/arrow/arrow-left.png"
+			overlay_file = "img/arrowLeft.png"
+			overlay_border = {3,3,3,3}
+			overlay_stretch	= FALSE
+			arrow_direction	= LEFT
+		}
+		image {
+			function = ARROW
+			#overlay_file = "/arrow/arrow-right.png"
+			overlay_file = "img/arrowRight.png"
+			overlay_border = {3,3,3,3}
+			overlay_stretch	= FALSE
+			arrow_direction	= RIGHT
+		}
+	}
+}
+
+
+style "styleOptionMenuBeam" {
+	engine "pixmap" {
+		image {
+			function        = TAB
+			state           = NORMAL
+			#overlay_file    = "assets/pan-down.png"
+			overlay_file    = "img/comboBoxBeam.png"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function        = TAB
+			state           = PRELIGHT
+			#overlay_file    = "assets/pan-down.png"
+			overlay_file    = "img/comboBoxBeam.png"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function        = TAB
+			state           = ACTIVE
+			#overlay_file    = "assets/pan-down.png"
+			overlay_file    = "img/comboBoxBeam.png"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function        = TAB
+			state           = INSENSITIVE
+			#overlay_file    = "assets/pan-down-insensitive.png"
+			overlay_file    = "img/comboBoxBeam.png"
+			overlay_stretch = FALSE
+		}
+	}
+}
+
+
+style "styleFrame" {
+	engine "pixmap" {
+
+		image {
+			function = SHADOW
+			shadow   = NONE
+		}
+		#these two affect the statusbar but oddly enough not the
+		#'frame in and out' in awf-gtk2
+		image {
+			function	= SHADOW
+			recolorable	= FALSE
+			shadow		= IN
+			#file		= "shadow1.png"
+			#file     = "img/frameStandAlone.png"
+			file     = "img/frameSHADOWIn.png"
+			border		= { 2, 2, 2, 2}
+			stretch		= TRUE
+		}
+		image {
+			function	= SHADOW
+			recolorable	= FALSE
+			shadow		= OUT
+			#file		= "shadow2.png"
+			#file     = "img/frameStandAlone.png"
+			file     = "img/frameSHADOWOut.png"
+			border		= { 2, 2, 2, 2 }
+			stretch		= TRUE
+		}   
+		image {
+			function	= SHADOW
+			recolorable	= FALSE
+			shadow		= ETCHED_IN
+			#file		= "frame_box_inset.png"
+			#file     = "img/frameStandAlone.png"
+			file     = "img/frameStandAloneOut.png"
+			border		= { 2, 2, 2, 2}
+			stretch		= TRUE
+		}
+		image {
+			function	= SHADOW
+			recolorable	= FALSE
+			shadow		= ETCHED_OUT
+			#file		= "frame_box_outset.png"
+			#file     = "img/frameStandAloneOut.png"
+			file     = "img/frameStandAlone.png"
+			border		= { 2, 2, 2, 2 }
+			stretch		= TRUE
+		}
+		#WITHOUT THIS THE FRAMES ARE DRAWN BY DEFAULT ENGINE, ALL IMAGES ARE SKIPPED!
+		#or is this the actual frame?
+		#then what do the other 'etched out' etc do?
+		image {
+			function	= SHADOW_GAP
+			recolorable	= TRUE
+			file		= "img/frameBoxInset.png"
+			border		= { 2, 2, 2, 2 }
+			stretch		= TRUE
+			gap_start_file  = "img/frameGapTopStart.png"
+			gap_start_border= { 1, 0, 0, 0 }
+			gap_end_file	= "img/frameGapTopEnd.png"
+			gap_end_border  = { 0, 2, 0, 0 }
+			gap_side	= TOP
+		}
+	}
+
+}
+
+
+
+style "styleSeparator" {
+	#enough
+	xthickness = 2
+	ythickness = 2
+	#GtkSeparatorMenuItem::horizontal-padding = 2
+	#GtkWidget::wide-separators = 2
+	#GtkWidget::separator-width = 2
+	#GtkWidget::separator-height = 2
+	engine "pixmap" {
+		image {
+			function = VLINE
+			recolorable = TRUE
+			file = "img/separatorVertical.png"
+		      	#file     = "img/frameStandAlone.png"
+		      	#overlay_file     = "img/frameStandAlone.png"
+			border = {0,0,0,0}
+			stretch = TRUE
+		}
+		image {
+			function = HLINE
+			recolorable = TRUE
+		      	#file     = "img/frameStandAlone.png"
+			#overlay_file     = "img/frameStandAlone.png"
+			#file = "/menu/line-h.png"
+			file = "img/separatorHorizontal.png"
+			border = {0,0,0,0}
+			stretch = TRUE
+		}
+	}
+} 
+
+#############################################################################
+
+style "default"
+{
+	#GtkButton::default_border         = {5, 5, 5, 5}
+	#GtkButton::default_outside_border = {6, 6, 6, 6}
+	#GtkButton::default_spacing        = 5
+	#GtkCheckButton::indicator_size    = 15
+	#GtkRadioButton::indicator_size    = 15
+	#GtkMenuItem::selected_shadow_type = out
+	#GtkRange::slider_width            = 22
+	#GtkRange::stepper_size            = 12
+	#GtkRange::stepper_spacing         = 0
+	#GtkRange::trough_border           = 0
+	#GtkScrollbar::min_slider_length   = 20
+	#GtkWidget::focus-line-pattern     = "\0"
+	#GtkWidget::focus-line-width       = 2
+	#GtkWidget::interior_focus         = 0
+	#GtkWidget::internal-padding       = 2
+	#GtkScrollbar::has_backward_stepper = 0
+	#GtkScrollbar::has_forward_stepper = 0
+	#GtkScrollbar::has_secondary_forward_stepper = 0
+	#GtkScrollbar::has_secondary_backward_stepper = 0
+	#GtkProgressBar::min-horizontal-bar-height = 4
+	#GtkProgressBar::min-vertical-bar-width = 4
+
+	#hmmmm
+	#GtkButton::focus-padding          = 0
+	GtkComboBox::appears-as-list = 1
+  	GtkOptionMenu::indicator_spacing  = {0, 10, 0, 0}
+  	GtkMenuBar::internal-padding = 4
+	GtkPaned::handle_full_size        = 10
+	GtkPaned::handle-size = 10
+	GtkHPaned::handle-size = 10
+	GtkVPaned::handle-size = 10
+  	GtkToolbar::internal-padding = 4
+
+
+
+
+
+          #GtkOptionMenu::indicator_size = { 9, 5 }
+          #GtkOptionMenu::indicator_spacing = { 7, 5, 2, 2 }
+
+	  #GtkButton::child_displacement_x = 1
+	  #GtkButton::child_displacement_y = 1
+
+	  #GtkMenu::horizontal-padding = 1
+	  #GtkMenu::vertical-padding = 1
+	  #GtkMenu::horizontal-offset = -6
+
+	  #GtkScrolledWindow::scrollbar-spacing = 0
+	  #GtkScrolledWindow::scrollbars-within-bevel = 1
+
+	xthickness = 1
+	ythickness = 1
+
+	engine "pixmap" {
+		#orange focus line around widgets when clicking on them
+		image {
+			function = FOCUS
+			file     = "img/focus.png"
+			border   = {1, 1, 1, 1}
+			stretch  = TRUE
+		}
+		#?? on itself this does absolutely nothing whatsoever
+		#also not in conjunction with 
+		#image {
+			#function        = HANDLE
+			#detail          = "handlebox"
+			#file    = "img/button.png"
+			#stretch = TRUE
+			#overlay_file    = "img/button.png"
+			#overlay_stretch = TRUE
+			#border = {1,1,1,1}
+			#overlay_border = {1,1,1,1}
+		#}
+		#nothing.. nothing.. nothing
+		#image {
+			#function	= BOX
+			#detail		= "handlebox_bin"
+			#file		= "shadow2.png"
+			#file		= "sblank.png"
+			#file    = "img/button.png"
+			#border		= { 1, 1, 1, 1 }
+			#stretch		= TRUE
+		#}
+		image {
+			function    = HANDLE
+			###file        = "assets/handle-horz.png"
+			###file    = "img/button.png"
+			file = "img/handleSeparatorHorizontal.png"
+			###border      = {0, 0, 4, 4}
+			#border = {0,0,0,0}
+			orientation = HORIZONTAL
+			overlay_file    = "img/handleButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function    = HANDLE
+			####file        = "assets/handle-vert.png"
+			####file    = "img/button.png"
+			#file = "img/separatorVertical.png"
+			file = "img/handleSeparatorVertical.png"
+			####border      = {4, 4, 0, 0}
+			#border = {0,0,0,0}
+			orientation = VERTICAL
+			overlay_file    = "img/handleButton.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			#grip in the bottom right corner to resize a box
+			#nothing to do with handles
+			function = RESIZE_GRIP
+			#file    = "img/button.png"
+			overlay_file = "img/resizer.png"
+			overlay_stretch = FALSE
+			#border = {1,1,1,1}
+		}
+
+
+
+
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################
+
+###################ONLY SIZES AND SUCH IN THIS STYLE
+################class "*" 					style "default"
+class "GtkWidget" 				style "default"
+
+##################COLORS
+widget_class "*" 				style "cde_style_5"
+widget_class "*GtkWindow*" 			style "cde_style_5"
+widget_class "*Dialog*" 			style "cde_style_6"
+widget_class "*MenuBar*" 			style "cde_style_6"
+widget_class "*GtkMenu*" 			style "cde_style_6"
+widget_class "*GtkOptionMenu*" 			style "cde_style_6"
+widget_class "*ToolBar*" 			style "cde_style_5"
+widget_class "*List*" 				style "cde_style_4"
+###############this also affects the text in combobox entry (not list, although it is set to appear as list)
+widget_class "*Text*" 				style "cde_style_4"
+widget_class "*Edit*" 				style "cde_style_4"
+widget_class "*Tree*" 				style "cde_style_4"
+###############this affext the text in combo box entry
+widget_class "*Combo*" 				style "cde_style_4"
+widget_class "*Icon*" 				style "cde_style_sel_5"
+widget_class "*Spin*" 				style "cde_style_4"
+
+##################WIDGETS
+class "GtkScrollbar*" 				style "styleScrollbar"
+class "GtkRange*" 				style "styleRange"
+class "GtkNotebook*" 				style "styleNotebook"
+class "GtkButton*" 				style "styleButton"
+class "GtkSeparator*"                      	style "styleSeparator"
+
+class "GtkRadio*" 				style "styleRadioButton"
+class "GtkRadioMenuItem*" 			style "styleRadioButton"
+###############hmm see checkbox
+class "GtkTreeView*" 				style "styleRadioButton"
+
+class "GtkCheckButton*" 			style "styleCheckBox"
+class "GtkCheckMenuItem*" 			style "styleCheckBox"
+class "GtkTreeView*" 				style "styleCheckBox"
+
+class "GtkProgressBar*" 			style "styleProgressBar"
+class "GtkTreeView*" 				style "styleProgressBar"
+
+class "GtkStatusbar*" 				style "styleStatusBar"
+class "GtkEntry*"				style "styleEntry"
+class "GtkSpinButton*"				style "styleSpinButton"
+
+################appears on top of the combo box button  but where else does it appear?
+################...aha in file dialog, the buttonsin the top that sort the entries
+################So: try to separate
+###############first default arrow
+###############this works:
+class "GtkArrow*"				style "styleArrow"
+###############but this doesnt.. why
+###############widget_class "<*GtkArrow*>*"				style "styleArrow"
+###############this selectx only the arrow in combo box button:
+widget_class "*Combo*GtkArrow*"			style "styleArrowBeam"
+###############in cde, button on combobox doesnt color when pressed down, only the arrow triangle presses down 
+###############see cde calendar/timezone
+widget_class "*Combo*.*Button*"			style "styleButtonOutsetOnly"
+###############widget_class "*Combo*" style "comboboxstyle"
+
+###############bg and edge around the menubar
+widget_class "*GtkMenuBar*" 			style "styleOutsetGreen"
+###############bg and edge around entire popup menu 
+widget_class "*GtkMenu" 			style "styleOutsetGreen"
+###############bg and edge around File/Edit items in menubar 
+################o fuck with *GtkMenuItem* this doesnt work for gimp but it does like this:
+widget_class "*GtkMenuBar.*MenuItem*"		style "styleInsetGreen"
+widget_class "*GtkMenuBar.GtkMenuItem*"		style "styleInsetGreen"
+###############bg and edge of menuitems inside popup menu
+widget_class "*<GtkMenu>.<GtkMenuItem>*"	style "styleInsetGreen"
+
+class "GtkFrame"                      		style "styleFrame"
+
+
+###############only the button of the option menu
+###############				 	(menubar.rc)
+widget_class "*GtkOptionMenu*" 			style "styleOutsetGreen"
+widget_class "*GtkOptionMenu*" 			style "styleOptionMenuBeam"
+widget_class "*GtkOptionMenu*" 			style "styleOptionMenuBeam"
+
+widget_class "*Toolbar*" 			style "styleButtonOutsetOnly"
+###############hmm buttons in the toolbar stay flat for some reason todo
+widget_class "*Toolbar*utton*" 			style "styleButton"
+
+
+#class	"GtkWidget" style "mybackground"
+#widget_class "*" 				style "mybackground"
+#class "GtkFrame"                      		style "mybackground"
+#class "GtkFrame"                      		style "cde_style_6"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

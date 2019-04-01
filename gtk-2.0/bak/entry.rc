@@ -1,0 +1,25 @@
+########################################################################
+# Entry
+########################################################################
+
+style "entry"
+{
+	GtkEntry::inner-border = {1, 1, 1, 1}
+	
+	engine "pixmap"
+	{
+### Entry ###
+		image
+		{
+			function = SHADOW
+			detail = "entry"
+			#file = "entry/entry.png"
+			file = "img/entryInnerBorder.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+		}
+	}
+}
+
+class "GtkEntry*" style "entry"
+

@@ -1,0 +1,42 @@
+
+
+style "optionmenubeam"
+{
+  engine "pixmap" {
+
+
+    image {
+      function        = TAB
+      state           = NORMAL
+      #overlay_file    = "assets/pan-down.png"
+	overlay_file    = "img/comboBoxBeam.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function        = TAB
+      state           = PRELIGHT
+      #overlay_file    = "assets/pan-down.png"
+	overlay_file    = "img/comboBoxBeam.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function        = TAB
+      state           = ACTIVE
+      #overlay_file    = "assets/pan-down.png"
+	overlay_file    = "img/comboBoxBeam.png"
+      overlay_stretch = FALSE
+    }
+
+    image {
+      function        = TAB
+      state           = INSENSITIVE
+      #overlay_file    = "assets/pan-down-insensitive.png"
+	overlay_file    = "img/comboBoxBeam.png"
+      overlay_stretch = FALSE
+    }
+  }
+}
+
+

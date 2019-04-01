@@ -1,0 +1,187 @@
+########################################################################
+# Notebook
+########################################################################
+
+style "notebook"
+{
+	engine "pixmap" 
+	{
+### Notebook ###
+		image 
+		{
+			function = BOX
+			file = "img/notebook.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+      	}
+		
+### Tab TOP ###
+
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabTop.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_side = BOTTOM
+		}
+
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "img/notebookTabTopActive.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+			gap_side = BOTTOM
+		}
+		
+		
+### Tab BOTTOM ###
+
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabBottom.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+
+## Active		
+		image 
+		{
+			function = EXTENSION
+			file = "img/notebookTabBottomActive.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_side = TOP
+		}
+
+### Tab LEFT ###
+		
+## Normal
+		image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabLeft.png"
+			border = {3,3,3,3}
+			stretch	= TRUE
+			gap_side = RIGHT
+		}
+		
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "img/notebookTabLeftActive.png"
+			border = {3, 3, 3, 3}
+			stretch = TRUE
+			gap_side = RIGHT
+		}
+
+### Tab RIGHT ###
+    	
+## Normal
+    	image 
+		{
+			function = EXTENSION
+			state = ACTIVE
+			file = "img/notebookTabRight.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+		
+## Active
+		image 
+		{
+			function = EXTENSION
+			file = "img/notebookTabRightActive.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_side = LEFT
+		}
+
+### Gap TOP ###
+		image 
+		{
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_file = "img/notebookTopGap.png"
+			gap_border = {3, 3, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = TOP
+		}
+
+### Gap BOTTOM ###
+		image 
+		{
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_file = "img/notebookBottomGap.png"
+			gap_border = {3, 3, 0, 0}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = BOTTOM
+      	}
+
+### Gap LEFT ###    
+		image 
+		{
+			function = BOX_GAP
+			file = "img/notebook.png"
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_file = "img/notebookLeftGap.png"
+			gap_border = {0, 0, 3, 3}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = LEFT
+      	}
+    
+### Gap RIGHT ###
+		image 
+		{
+			function = BOX_GAP
+			file = "img/notebook.png" 
+			border = {3, 3, 3, 3}
+			stretch	= TRUE
+			gap_file = "img/notebookRightGap.png"
+			gap_border = {0, 0, 3, 3}
+			gap_start_file = "null.png"
+			gap_start_border = {0, 0, 0, 0}
+			gap_end_file = "null.png"
+			gap_end_border = {0, 0, 0, 0}
+			gap_side = RIGHT
+		}
+
+### Focus ###
+		image 
+		{
+			function = FOCUS
+			file = "null.png"
+			border = {1, 1, 1, 1}
+			stretch = TRUE
+		}
+	}
+}
+
+class "GtkNotebook*" style "notebook"
+

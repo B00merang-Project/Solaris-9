@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+#TESTS############################################################################
+
+#only colors here
+#widget_class "*" style "cde_style_5"
+#widget_class "*GtkWindow*" style "cde_style_5"
+#widget_class "*Dialog*" style "cde_style_6"
+#widget_class "*MenuBar*" style "cde_style_6"
+
+#this selects the menuitem in the menubar, not the popup menu itself.:
+#widget_class "*MenuBar*GtkMenu*" style "outsetgreen"
+#also selects only the menuitem
+#widget_class "*MenuBar*enu*" style "outsetgreen"
+
+#this selects the menuitem in the menubar, not the popup menu itself.:
+#widget_class "*<GtkMenuBar>.<GtkMenu>*"	style "outsetgreen"
+#widget_class "<GtkMenuBar>*"	style "button"
+#this selects menuitem in menubar. wont work without preceding *
+#widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "outsetgreen"
+#nothing
+#widget_class "*<GtkMenuBar>.*<GtkMenu>*"	style "outsetgreen"
+#widget_class "*<GtkMenu>*"	style "outsetgreen"
+
+#widget_class "*ToolBar*" style "cde_style_5"
+#widget_class "*List*" style "cde_style_4"
+#widget_class "*Text*" style "cde_style_4"
+#widget_class "*Spin*" style "cde_style_4"
+#widget_class "*Edit*" style "cde_style_4"
+#widget_class "*Tree*" style "cde_style_4"
+#widget_class "*Combo*" style "cde_style_4"
+#widget_class "*GtkCell*" style "cde_style_sel_5"
+#widget_class "*Icon*" style "cde_style_sel_5"
+
+
+#widget_class "*Combo*.*Button*" style "buttonoutonly"
+#widget_class "*GtkMenu" 			style "outsetgreen"
+#widget_class "*Combo*.*Menu"		style "cde_style_4"
+#widget_class "*Combo*.*MenuItem*"	style "outsetgreen"
+#widget_class "*MenuItem*"	style "outsetgreen"
+
+        
+#these contain the thinice engine, for thin borders with no black stripe
+#bg and edge around the menubar
+#widget_class "*GtkMenuBar*" 			style "menuoutset1px"
+#bg and edge around entire popup menu 
+#widget_class "*GtkMenu" 			style "menuoutset2px"
+#bg and edge around File/Edit items in menubar 
+#o fuck with *GtkMenuItem* this doesnt work for gimp but it does like this:
+#widget_class "*GtkMenuBar.*MenuItem*"		style "menuinset1px"
+#widget_class "*GtkMenuBar.GtkMenuItem*"		style "menuinset1px"
+#bg and edge of menuitems inside popup menu
+#widget_class "*<GtkMenu>.<GtkMenuItem>*"	style "menuinset1px"
+
+
+#class "GtkRadio*" 				style "thiniceengine"
+#class "GtkRadioMenuItem*" 			style "thiniceengine"
+#class "GtkCheck*" 				style "thiniceengine"
+#class "*Button*" 				style "thiniceengine"
+
+#frame in thinice only has a single pixel solid line. with cleanice it
+#has inset/outset look
+#class "GtkNotebook*" 				style "cleaniceengine"
+#class "GtkFrame*"	                	style "cleaniceengine"
+
+#this one removes the separator inside the slider. in cde there is a separator but 
+#problem is that loading the cleanice engine makes the slider narrow for some reason
+#and cant be set back to wide. Then the separator looks funny. But need cleanice
+#for frames/notebook.
+#class "*GtkRange*" 				style "thiniceengine"
+
+#class "GtkProgressBar"     			style "thiniceengine"
+
+
+
+
+
+
+#Oh Yes... 
+#class "*GtkRange*" style "qtcurveengine"
+
+
+
+
+#??
+#widget_class "*GtkMenuBar.*MenuItem*"			style "menuitemgreen"
+#widget_class "*Dialog.*Scrollbar*" style "scrollbargreen"
+
+#class "GtkScrollbar*" style "scrollbargreen"
+
+
+#style "tooltips" = "default"
+#{
+	#bg[NORMAL] = "#FFFCDB"
+	#fg[NORMAL] = "#000000"
+#}
+
+#widget "gtk-tooltips*" style "tooltips"
+
+
+
+
+
+
