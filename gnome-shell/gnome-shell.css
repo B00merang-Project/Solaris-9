@@ -615,6 +615,8 @@ StScrollBar {
 		font-weight: normal;
 		color: black;
 		transition-duration: 100ms;
+		text-shadow:none;
+		icon-shadow:none;
 }
 		#panel .panel-button .app-menu-icon {
 			-st-icon-style: regular;
