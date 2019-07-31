@@ -1,10 +1,10 @@
 [![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
 
-# Solaris-10-CDE
+# Solaris 9
 
-GTK theme based on the CDE desktop used in Solaris 10
+GTK theme based on the CDE desktop used in Solaris 9's Common Desktop Environment
 
-![solaris-10-cde](https://github.com/B00merang-Project/gallery/raw/master/Solaris%2010%20CDE%20(3).png)
+![solaris-9](https://github.com/B00merang-Project/gallery/raw/master/Solaris%2010%20CDE%20(3).png)
 
 **Maintainer :** [Elbullazul](https://github.com/Elbullazul)
 
@@ -12,7 +12,7 @@ GTK theme based on the CDE desktop used in Solaris 10
 
 **License :** GPL v3
 
-**More info :** http://b00merang.weebly.com/solaris-10-cde.html
+**More info :** http://b00merang.weebly.com/solaris-9.html
 
 ### Manual installation
 
