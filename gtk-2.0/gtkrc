@@ -1,38 +1,11 @@
-#bottom-gap.png
-#left-gap.png
-#progressBackground1.png
-#progressBarTrough1.png
-#radio.png
-#radioPressed.png
-#resizer.png
-#right-gap.png
-#spinnerButtonUp.png
-#tab-bottom-active.png
-#tab-bottom.png
-#tab-left-active.png
-#tab-left.png
-#tab-right-active.png
-#tab-right.png
-#tab-top-active.png
-#tab-top.png
-#top-gap.png
-
 ########################################################################
 # adapted from HP-UXMotif  / Adwaita
 # Jos van Riswick 2017 / josvanr@gmail.com
 # GPL3
 ########################################################################
 
-#gtk_color_scheme = "fg_color:#000\nbg_color:#C5B2A8\nbase_color:#A8978F\ntext_color:#000\nselected_bg_color:#ECA770\nselected_fg_color:#000\ntooltip_bg_color:#ffffe1\ntooltip_fg_color:#000"
-#gtk-icon-sizes ="gtk-small-toolbar=16,16:gtk-large-toolbar=24,24:gtk-button=16,16"
-
-
-##################################################################
-##################################################################
 #WRITTEN BY MOTIFCOLORS OR CDEPANEL SCRIPT FOR CURRENT CDE PALETTE
 include "cdecolors.rc"
-##################################################################
-##################################################################
 
 style "styleScrollbar" {
 	#also scrollbar slider width
@@ -50,7 +23,6 @@ style "styleScrollbar" {
 		image {
 		    function = BOX
 		    detail = "trough"
-		    #file = "scrollbar/trough.png"
 		    file = "resources/scrollbarTrough.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
@@ -59,7 +31,6 @@ style "styleScrollbar" {
 		image {
 		    function = BOX
 		    detail = "trough"
-		    #file = "scrollbar/trough.png"
 		    file = "resources/scrollbarTrough.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
@@ -67,7 +38,6 @@ style "styleScrollbar" {
 		}
 		image {
 		    function = SLIDER
-		       #file = "scrollbar/scrollbar_horizontal.png"
 		    file = "resources/scrollbarSlider.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
@@ -75,7 +45,6 @@ style "styleScrollbar" {
 			}
 		image {
 		    function = SLIDER
-		    #file = "scrollbar/scrollbar_vertical.png"
 		    file = "resources/scrollbarSlider.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
@@ -84,18 +53,15 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_up.png"
 		    overlay_file = "resources/scrollbarArrowUp.png"
 		    #using transparent images is not really handy because there is another 
 		    #default button under that, not clean background
-		    #overlay_file = "resources/scrollbarArrowUp.transparent.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
 		}
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_up.png"
 		    overlay_file = "resources/scrollbarArrowUp.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
@@ -103,7 +69,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_up.png"
 		    overlay_file = "resources/scrollbarArrowUp.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
@@ -111,7 +76,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_up_clicked.png"
 		    overlay_file = "resources/scrollbarArrowUpPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
@@ -119,7 +83,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_down.png"
 		    overlay_file = "resources/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
@@ -127,7 +90,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_down.png"
 		    overlay_file = "resources/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
@@ -135,7 +97,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_down.png"
 		    overlay_file = "resources/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
@@ -143,7 +104,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_down_clicked.png"
 		    overlay_file = "resources/scrollbarArrowDownPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
@@ -151,7 +111,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_left.png"
 		    overlay_file = "resources/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
@@ -159,7 +118,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_left.png"
 		    overlay_file = "resources/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
@@ -167,7 +125,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_left.png"
 		    overlay_file = "resources/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
@@ -175,7 +132,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_left_clicked.png"
 		    overlay_file = "resources/scrollbarArrowLeftPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
@@ -183,7 +139,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_right.png"
 		    overlay_file = "resources/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
@@ -191,7 +146,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_right.png"
 		    overlay_file = "resources/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
@@ -199,7 +153,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_right.png"
 		    overlay_file = "resources/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
@@ -207,7 +160,6 @@ style "styleScrollbar" {
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_right_clicked.png"
 		    overlay_file = "resources/scrollbarArrowRightPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
@@ -231,8 +183,7 @@ style "styleScrollbar6" {
 		image {
 		    function = BOX
 		    detail = "trough"
-		    #file = "scrollbar/trough.png"
-		    file = "resources/colorset6/scrollbarTrough.png"
+		    file = "resources/dark/scrollbarTrough.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
 		    orientation = VERTICAL
@@ -240,24 +191,21 @@ style "styleScrollbar6" {
 		image {
 		    function = BOX
 		    detail = "trough"
-		    #file = "scrollbar/trough.png"
-		    file = "resources/colorset6/scrollbarTrough.png"
+		    file = "resources/dark/scrollbarTrough.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
 		    orientation = HORIZONTAL
 		}
 		image {
 		    function = SLIDER
-		       #file = "scrollbar/scrollbar_horizontal.png"
-		    file = "resources/colorset6/scrollbarSlider.png"
+		    file = "resources/dark/scrollbarSlider.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
 		    orientation = HORIZONTAL
 			}
 		image {
 		    function = SLIDER
-		    #file = "scrollbar/scrollbar_vertical.png"
-		    file = "resources/colorset6/scrollbarSlider.png"
+		    file = "resources/dark/scrollbarSlider.png"
 		    border = {3, 3, 3, 3}
 		    stretch = TRUE
 		    orientation = VERTICAL
@@ -265,131 +213,114 @@ style "styleScrollbar6" {
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_up.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowUp.png"
+		    overlay_file = "resources/dark/scrollbarArrowUp.png"
 		    #using transparent images is not really handy because there is another 
 		    #default button under that, not clean background
-		    #overlay_file = "resources/colorset6/scrollbarArrowUp.transparent.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
 		}
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_up.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowUp.png"
+		    overlay_file = "resources/dark/scrollbarArrowUp.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
 		}
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_up.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowUp.png"
+		    overlay_file = "resources/dark/scrollbarArrowUp.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
 		}
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_up_clicked.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowUpPressed.png"
+		    overlay_file = "resources/dark/scrollbarArrowUpPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = UP
 		}
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_down.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowDown.png"
+		    overlay_file = "resources/dark/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
 		}
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_down.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowDown.png"
+		    overlay_file = "resources/dark/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
 		}
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_down.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowDown.png"
+		    overlay_file = "resources/dark/scrollbarArrowDown.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
 		}
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_down_clicked.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowDownPressed.png"
+		    overlay_file = "resources/dark/scrollbarArrowDownPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = DOWN
 		}
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_left.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowLeft.png"
+		    overlay_file = "resources/dark/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
 		}
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_left.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowLeft.png"
+		    overlay_file = "resources/dark/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
 		}
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_left.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowLeft.png"
+		    overlay_file = "resources/dark/scrollbarArrowLeft.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
 		}
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_left_clicked.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowLeftPressed.png"
+		    overlay_file = "resources/dark/scrollbarArrowLeftPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = LEFT
 		}
 		image {
 		    function = ARROW
 		    state = NORMAL
-		    #overlay_file = "scrollbar/arrow_right.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowRight.png"
+		    overlay_file = "resources/dark/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
 		}
 		image {
 		    function = ARROW
 		    state = PRELIGHT
-		    #overlay_file = "scrollbar/arrow_right.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowRight.png"
+		    overlay_file = "resources/dark/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
 		}
 		image {
 		    function = ARROW
 		    state = INSENSITIVE
-		    #overlay_file = "scrollbar/arrow_right.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowRight.png"
+		    overlay_file = "resources/dark/scrollbarArrowRight.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
 		}
 		image {
 		    function = ARROW
 		    state = ACTIVE
-		    #overlay_file = "scrollbar/arrow_right_clicked.png"
-		    overlay_file = "resources/colorset6/scrollbarArrowRightPressed.png"
+		    overlay_file = "resources/dark/scrollbarArrowRightPressed.png"
 		    overlay_stretch = FALSE
 		    arrow_direction = RIGHT
 		}    
@@ -405,7 +336,6 @@ style "styleRange"
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "scale/trough-horiz.png"
 			file = "resources/scrollbarTrough.png"
 			#border = {3, 3, 9, 9}
             		border = {3, 3, 3, 3}
@@ -415,7 +345,6 @@ style "styleRange"
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "scale/trough-vert.png"
 			file = "resources/scrollbarTrough.png"
             		border = {3, 3, 3, 3}
 			#border = {9, 9, 3, 3}
@@ -424,14 +353,12 @@ style "styleRange"
 		}
 		image {
 			function = SLIDER
-			#overlay_file = "scale/slider-horiz.png"
 			file = "resources/rangeSliderHorizontal.png"
 			stretch	= TRUE
 			orientation	= HORIZONTAL
 		}
 		image {
 			function = SLIDER
-			#overlay_file = "scale/slider-vert.png"
 			file = "resources/rangeSliderVertical.png"
 			#overlay_stretch	= FALSE
 			orientation	= VERTICAL
@@ -440,7 +367,6 @@ style "styleRange"
 		#In CDE this is orange so keep (set in "default" style)
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#} 
 	}
 }
@@ -454,8 +380,7 @@ style "styleRange6"
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "scale/trough-horiz.png"
-			file = "resources/colorset6/scrollbarTrough.png"
+			file = "resources/dark/scrollbarTrough.png"
 			#border = {3, 3, 9, 9}
             		border = {3, 3, 3, 3}
 			stretch	= TRUE
@@ -464,8 +389,7 @@ style "styleRange6"
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "scale/trough-vert.png"
-			file = "resources/colorset6/scrollbarTrough.png"
+			file = "resources/dark/scrollbarTrough.png"
             		border = {3, 3, 3, 3}
 			#border = {9, 9, 3, 3}
 			stretch	= TRUE
@@ -473,15 +397,13 @@ style "styleRange6"
 		}
 		image {
 			function = SLIDER
-			#overlay_file = "scale/slider-horiz.png"
-			file = "resources/colorset6/rangeSliderHorizontal.png"
+			file = "resources/dark/rangeSliderHorizontal.png"
 			stretch	= TRUE
 			orientation	= HORIZONTAL
 		}
 		image {
 			function = SLIDER
-			#overlay_file = "scale/slider-vert.png"
-			file = "resources/colorset6/rangeSliderVertical.png"
+			file = "resources/dark/rangeSliderVertical.png"
 			#overlay_stretch	= FALSE
 			orientation	= VERTICAL
 		}
@@ -489,7 +411,6 @@ style "styleRange6"
 		#In CDE this is orange so keep (set in "default" style)
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#} 
 	}
 }
@@ -614,7 +535,7 @@ style "styleNotebook" {
       		}
 		image {
 			function = BOX_GAP
-			file = "resources/notebook.png" 
+			file = "resources/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_file = "resources/notebookRightGap.png"
@@ -627,7 +548,6 @@ style "styleNotebook" {
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 			#border = {1, 1, 1, 1}
 			#stretch = TRUE
 		#}
@@ -648,21 +568,21 @@ style "styleNotebook6" {
 		#this seems to be unnecessary (or defined also elswhere)
 		image {
 			function = BOX
-			file = "resources/colorset6/notebook.png"
+			file = "resources/dark/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 		      }
 		image {
 			function = EXTENSION
 			state = ACTIVE
-			file = "resources/colorset6/notebookTabTop.png"
+			file = "resources/dark/notebookTabTop.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_side = BOTTOM
 		}
 		image {
 			function = EXTENSION
-			file = "resources/colorset6/notebookTabTopActive.png"
+			file = "resources/dark/notebookTabTopActive.png"
 			border = {1, 1, 1, 1}
 			stretch = TRUE
 			gap_side = BOTTOM
@@ -670,14 +590,14 @@ style "styleNotebook6" {
 		image {
 			function = EXTENSION
 			state = ACTIVE
-			file = "resources/colorset6/notebookTabBottom.png"
+			file = "resources/dark/notebookTabBottom.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_side = TOP
 		}
 		image {
 			function = EXTENSION
-			file = "resources/colorset6/notebookTabBottomActive.png"
+			file = "resources/dark/notebookTabBottomActive.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_side = TOP
@@ -685,14 +605,14 @@ style "styleNotebook6" {
 		image {
 			function = EXTENSION
 			state = ACTIVE
-			file = "resources/colorset6/notebookTabLeft.png"
+			file = "resources/dark/notebookTabLeft.png"
 			border = {1,1,1,1}
 			stretch	= TRUE
 			gap_side = RIGHT
 		}
 		image {
 			function = EXTENSION
-			file = "resources/colorset6/notebookTabLeftActive.png"
+			file = "resources/dark/notebookTabLeftActive.png"
 			border = {1, 1, 1, 1}
 			stretch = TRUE
 			gap_side = RIGHT
@@ -700,14 +620,14 @@ style "styleNotebook6" {
     		image {
 			function = EXTENSION
 			state = ACTIVE
-			file = "resources/colorset6/notebookTabRight.png"
+			file = "resources/dark/notebookTabRight.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_side = LEFT
 		}
 		image {
 			function = EXTENSION
-			file = "resources/colorset6/notebookTabRightActive.png"
+			file = "resources/dark/notebookTabRightActive.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			gap_side = LEFT
@@ -718,10 +638,10 @@ style "styleNotebook6" {
 		#effect
 		image {
 			function = BOX_GAP
-			file = "resources/colorset6/notebook.png"
+			file = "resources/dark/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
-			gap_file = "resources/colorset6/notebookTopGap.png"
+			gap_file = "resources/dark/notebookTopGap.png"
 			gap_border = {1, 1, 0, 0}
 			gap_start_file = "null.png"
 			gap_start_border = {0, 0, 0, 0}
@@ -731,10 +651,10 @@ style "styleNotebook6" {
 		}
 		image {
 			function = BOX_GAP
-			file = "resources/colorset6/notebook.png"
+			file = "resources/dark/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
-			gap_file = "resources/colorset6/notebookBottomGap.png"
+			gap_file = "resources/dark/notebookBottomGap.png"
 			gap_border = {1, 1, 0, 0}
 			gap_start_file = "null.png"
 			gap_start_border = {0, 0, 0, 0}
@@ -744,10 +664,10 @@ style "styleNotebook6" {
 		      }
 		image {
 			function = BOX_GAP
-			file = "resources/colorset6/notebook.png"
+			file = "resources/dark/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
-			gap_file = "resources/colorset6/notebookLeftGap.png"
+			gap_file = "resources/dark/notebookLeftGap.png"
 			gap_border = {0, 0, 1, 1}
 			gap_start_file = "null.png"
 			gap_start_border = {0, 0, 0, 0}
@@ -757,10 +677,10 @@ style "styleNotebook6" {
       		}
 		image {
 			function = BOX_GAP
-			file = "resources/colorset6/notebook.png" 
+			file = "resources/dark/notebook.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
-			gap_file = "resources/colorset6/notebookRightGap.png"
+			gap_file = "resources/dark/notebookRightGap.png"
 			gap_border = {0, 0, 1, 1}
 			gap_start_file = "null.png"
 			gap_start_border = {0, 0, 0, 0}
@@ -770,7 +690,6 @@ style "styleNotebook6" {
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 			#border = {1, 1, 1, 1}
 			#stretch = TRUE
 		#}
@@ -810,7 +729,6 @@ style "styleButton" {
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#}
 	}
 }
@@ -820,34 +738,33 @@ style "styleButton6" {
 		image {
 			function = BOX
 			state = NORMAL
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = INSENSITIVE
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = ACTIVE
-			file = "resources/colorset6/buttonPressed.png"
+			file = "resources/dark/buttonPressed.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#}
 	}
 }
@@ -858,28 +775,24 @@ style "styleRadioButton" {
 		image {
 			function = CHECK
 			shadow = OUT
-			#overlay_file = "radio/radio.png"
 			overlay_file = "resources/radioButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = CHECK
 			shadow = IN
-			#overlay_file = "radio/radio-pressed.png"
 			overlay_file = "resources/radioButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = OUT
-			#overlay_file = "radio/radio.png"
 			overlay_file = "resources/radioButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = IN
-			#overlay_file = "radio/radio-pressed.png"
 			overlay_file = "resources/radioButtonPressed.png"
 			overlay_stretch = FALSE
 		}
@@ -891,29 +804,25 @@ style "styleRadioButton6" {
 		image {
 			function = CHECK
 			shadow = OUT
-			#overlay_file = "radio/radio.png"
-			overlay_file = "resources/colorset6/radioButton.png"
+			overlay_file = "resources/dark/radioButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = CHECK
 			shadow = IN
-			#overlay_file = "radio/radio-pressed.png"
-			overlay_file = "resources/colorset6/radioButtonPressed.png"
+			overlay_file = "resources/dark/radioButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = OUT
-			#overlay_file = "radio/radio.png"
-			overlay_file = "resources/colorset6/radioButton.png"
+			overlay_file = "resources/dark/radioButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = IN
-			#overlay_file = "radio/radio-pressed.png"
-			overlay_file = "resources/colorset6/radioButtonPressed.png"
+			overlay_file = "resources/dark/radioButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 	}
@@ -926,28 +835,24 @@ style "styleCheckBox" {
 		image {
 			function = CHECK
 			shadow = OUT
-			#overlay_file = "c_box/c_box.png"
 			overlay_file = "resources/checkButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = CHECK
 			shadow = IN
-			#overlay_file = "c_box/c_box-pressed.png"
 			overlay_file = "resources/checkButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = OUT
-			#overlay_file = "c_box/c_box.png"
 			overlay_file = "resources/checkButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = IN
-			#overlay_file = "c_box/c_box-pressed.png"
 			overlay_file = "resources/checkButtonPressed.png"
 			overlay_stretch = FALSE
 		}
@@ -960,29 +865,25 @@ style "styleCheckBox6" {
 		image {
 			function = CHECK
 			shadow = OUT
-			#overlay_file = "c_box/c_box.png"
-			overlay_file = "resources/colorset6/checkButton.png"
+			overlay_file = "resources/dark/checkButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = CHECK
 			shadow = IN
-			#overlay_file = "c_box/c_box-pressed.png"
-			overlay_file = "resources/colorset6/checkButtonPressed.png"
+			overlay_file = "resources/dark/checkButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = OUT
-			#overlay_file = "c_box/c_box.png"
-			overlay_file = "resources/colorset6/checkButton.png"
+			overlay_file = "resources/dark/checkButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function = OPTION
 			shadow = IN
-			#overlay_file = "c_box/c_box-pressed.png"
-			overlay_file = "resources/colorset6/checkButtonPressed.png"
+			overlay_file = "resources/dark/checkButtonPressed.png"
 			overlay_stretch = FALSE
 		}
 	}
@@ -1002,7 +903,6 @@ style "styleProgressBar" {
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "progressbar/trough.png"
             		file = "resources/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
@@ -1011,7 +911,6 @@ style "styleProgressBar" {
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "progressbar/trough.png"
             		file = "resources/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
@@ -1020,7 +919,6 @@ style "styleProgressBar" {
 		image {
 			function = SHADOW
 			shadow = IN
-			#file = "progressbar/trough-tree.png"
             		file = "resources/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
@@ -1028,7 +926,6 @@ style "styleProgressBar" {
 		image {
 			function = BOX
 			detail = "bar"
-			#file = "progressbar/progressbar.png"
             		file = "resources/progressBackground.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
@@ -1037,7 +934,6 @@ style "styleProgressBar" {
 		image {
 			function = BOX
 			detail = "bar"
-			#file = "progressbar/progressbar.png"
             		file = "resources/progressBackground.png"
 			border = {1, 1, 1, 1}
 			stretch = TRUE
@@ -1047,7 +943,6 @@ style "styleProgressBar" {
 			function = BOX
 			state = SELECTED
 			border = {1, 1, 1, 1}
-			#file = "progressbar/progressbar.png"
             		file = "resources/progressBackground.png"
 			stretch	= TRUE
 		}
@@ -1067,8 +962,7 @@ style "styleProgressBar6" {
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "progressbar/trough.png"
-            		file = "resources/colorset6/progressBarTrough.png"
+            		file = "resources/dark/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
 			orientation	= HORIZONTAL
@@ -1076,8 +970,7 @@ style "styleProgressBar6" {
 		image {
 			function = BOX
 			detail = "trough"
-			#file = "progressbar/trough.png"
-            		file = "resources/colorset6/progressBarTrough.png"
+            		file = "resources/dark/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 			orientation	= VERTICAL
@@ -1085,16 +978,14 @@ style "styleProgressBar6" {
 		image {
 			function = SHADOW
 			shadow = IN
-			#file = "progressbar/trough-tree.png"
-            		file = "resources/colorset6/progressBarTrough.png"
+            		file = "resources/dark/progressBarTrough.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
 		}
 		image {
 			function = BOX
 			detail = "bar"
-			#file = "progressbar/progressbar.png"
-            		file = "resources/colorset6/progressBackground.png"
+            		file = "resources/dark/progressBackground.png"
 			border = {1, 1, 1, 1}
 			stretch	= TRUE
 			orientation	= HORIZONTAL
@@ -1102,8 +993,7 @@ style "styleProgressBar6" {
 		image {
 			function = BOX
 			detail = "bar"
-			#file = "progressbar/progressbar.png"
-            		file = "resources/colorset6/progressBackground.png"
+            		file = "resources/dark/progressBackground.png"
 			border = {1, 1, 1, 1}
 			stretch = TRUE
 			orientation	= VERTICAL
@@ -1112,8 +1002,7 @@ style "styleProgressBar6" {
 			function = BOX
 			state = SELECTED
 			border = {1, 1, 1, 1}
-			#file = "progressbar/progressbar.png"
-            		file = "resources/colorset6/progressBackground.png"
+            		file = "resources/dark/progressBackground.png"
 			stretch	= TRUE
 		}
 	}
@@ -1137,7 +1026,7 @@ style "styleStatusBar6" {
 		image {
 			function = RESIZE_GRIP
 			detail = "statusbar"
-			overlay_file = "resources/colorset6/resizer.png"
+			overlay_file = "resources/dark/resizer.png"
 			overlay_stretch	= FALSE
 		}
 	}
@@ -1149,7 +1038,6 @@ style "styleEntry" {
 		image {
 			function = SHADOW
 			detail = "entry"
-			#file = "entry/entry.png"
 			file = "resources/entryInnerBorder.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
@@ -1163,8 +1051,7 @@ style "styleEntry6" {
 		image {
 			function = SHADOW
 			detail = "entry"
-			#file = "entry/entry.png"
-			file = "resources/colorset6/entryInnerBorder.png"
+			file = "resources/dark/entryInnerBorder.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
 		}
@@ -1176,7 +1063,6 @@ style "styleSpinButton"    {
 		image {
 			function = BOX
 			detail = "spinbutton"
-			#file = "button/button-spin.png"
 			file = "resources/button.png"
 			border = {4, 4, 4, 4}
 			stretch	= TRUE
@@ -1189,18 +1075,15 @@ style "styleSpinButton"    {
 			function = BOX
 			state = NORMAL
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
 			overlay_file = "resources/spinButtonUp.png"
 			#aha the image is 'overlayed' only transparent image with for black and white pixels
 			#for transparent alpha=50overlay white corresponts to ts color black for bs color
-			#overlay_file = "../resources/arrowup.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
       			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
 			overlay_file = "resources/spinButtonUp.png"
 			overlay_stretch	= FALSE
 		}
@@ -1208,7 +1091,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = INSENSITIVE
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up-disable.png"
 			overlay_file = "resources/spinButtonUp.png"
 			overlay_stretch	= FALSE
 		}
@@ -1216,7 +1098,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = ACTIVE
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
 			overlay_file = "resources/spinButtonUpPressed.png"
 			overlay_stretch	= FALSE
 		}    
@@ -1224,7 +1105,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = NORMAL
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
 			overlay_file = "resources/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
@@ -1232,7 +1112,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = PRELIGHT
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
 			overlay_file = "resources/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
@@ -1240,7 +1119,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = INSENSITIVE
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down-disable.png"
 			overlay_file = "resources/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
@@ -1248,7 +1126,6 @@ style "styleSpinButton"    {
 			function = BOX
 			state = ACTIVE
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
 			overlay_file = "resources/spinButtonDownPressed.png"
 			overlay_stretch	= FALSE
 		}
@@ -1261,8 +1138,7 @@ style "styleSpinButton6"    {
 		image {
 			function = BOX
 			detail = "spinbutton"
-			#file = "button/button-spin.png"
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {4, 4, 4, 4}
 			stretch	= TRUE
 		}
@@ -1274,67 +1150,58 @@ style "styleSpinButton6"    {
 			function = BOX
 			state = NORMAL
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
-			overlay_file = "resources/colorset6/spinButtonUp.png"
+			overlay_file = "resources/dark/spinButtonUp.png"
 			#aha the image is 'overlayed' only transparent image with for black and white pixels
 			#for transparent alpha=60overlay white corresponts to ts color black for bs color
-			#overlay_file = "../resources/colorset6/arrowup.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
       			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
-			overlay_file = "resources/colorset6/spinButtonUp.png"
+			overlay_file = "resources/dark/spinButtonUp.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = INSENSITIVE
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up-disable.png"
-			overlay_file = "resources/colorset6/spinButtonUp.png"
+			overlay_file = "resources/dark/spinButtonUp.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = ACTIVE
 			detail = "spinbutton_up"
-			#overlay_file = "arrow/arrow-up.png"
-			overlay_file = "resources/colorset6/spinButtonUpPressed.png"
+			overlay_file = "resources/dark/spinButtonUpPressed.png"
 			overlay_stretch	= FALSE
 		}    
 		image {
 			function = BOX
 			state = NORMAL
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
-			overlay_file = "resources/colorset6/spinButtonDown.png"
+			overlay_file = "resources/dark/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
-			overlay_file = "resources/colorset6/spinButtonDown.png"
+			overlay_file = "resources/dark/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = INSENSITIVE
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down-disable.png"
-			overlay_file = "resources/colorset6/spinButtonDown.png"
+			overlay_file = "resources/dark/spinButtonDown.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function = BOX
 			state = ACTIVE
 			detail = "spinbutton_down"
-			#overlay_file = "arrow/arrow-down.png"
-			overlay_file = "resources/colorset6/spinButtonDownPressed.png"
+			overlay_file = "resources/dark/spinButtonDownPressed.png"
 			overlay_stretch	= FALSE
 		}
   	}
@@ -1347,7 +1214,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamUp.png"
+			overlay_file = "resources/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1356,7 +1223,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamUp.png"
+			overlay_file = "resources/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1365,7 +1232,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamUpPressed.png"
+			overlay_file = "resources/arrowBeamUpPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1374,7 +1241,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamUp.png"
+			overlay_file = "resources/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1384,7 +1251,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamDown.png"
+			overlay_file = "resources/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1393,7 +1260,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamDown.png"
+			overlay_file = "resources/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1402,7 +1269,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamDownPressed.png"
+			overlay_file = "resources/arrowBeamDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1411,7 +1278,7 @@ style "styleArrowBeam" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowBeamDown.png"
+			overlay_file = "resources/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1434,7 +1301,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamUp.png"
+			overlay_file = "resources/dark/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1443,7 +1310,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamUp.png"
+			overlay_file = "resources/dark/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1452,7 +1319,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamUpPressed.png"
+			overlay_file = "resources/dark/arrowBeamUpPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1461,7 +1328,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamUp.png"
+			overlay_file = "resources/dark/arrowBeamUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1471,7 +1338,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamDown.png"
+			overlay_file = "resources/dark/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1480,7 +1347,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamDown.png"
+			overlay_file = "resources/dark/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1489,7 +1356,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamDownPressed.png"
+			overlay_file = "resources/dark/arrowBeamDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1498,7 +1365,7 @@ style "styleArrowBeam6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowBeamDown.png"
+			overlay_file = "resources/dark/arrowBeamDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1521,7 +1388,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowUp.png"
+			overlay_file = "resources/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1530,7 +1397,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowUp.png"
+			overlay_file = "resources/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1539,7 +1406,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowUpPressed.png"
+			overlay_file = "resources/arrowUpPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1548,7 +1415,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowUp.png"
+			overlay_file = "resources/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1557,7 +1424,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1566,7 +1433,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1575,7 +1442,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDownPressed.png"
+			overlay_file = "resources/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1584,7 +1451,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1593,7 +1460,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1602,7 +1469,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1611,7 +1478,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDownPressed.png"
+			overlay_file = "resources/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1620,7 +1487,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1629,7 +1496,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1638,7 +1505,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1647,7 +1514,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDownPressed.png"
+			overlay_file = "resources/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1656,7 +1523,7 @@ style "styleArrow" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/arrowDown.png"
+			overlay_file = "resources/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1679,7 +1546,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowUp.png"
+			overlay_file = "resources/dark/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1688,7 +1555,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowUp.png"
+			overlay_file = "resources/dark/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1697,7 +1564,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowUpPressed.png"
+			overlay_file = "resources/dark/arrowUpPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1706,7 +1573,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowUp.png"
+			overlay_file = "resources/dark/arrowUp.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= UP
@@ -1715,7 +1582,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1724,7 +1591,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1733,7 +1600,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDownPressed.png"
+			overlay_file = "resources/dark/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1742,7 +1609,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
@@ -1751,7 +1618,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1760,7 +1627,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1769,7 +1636,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDownPressed.png"
+			overlay_file = "resources/dark/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1778,7 +1645,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
@@ -1787,7 +1654,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= NORMAL
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1796,7 +1663,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= PRELIGHT
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1805,7 +1672,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= ACTIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDownPressed.png"
+			overlay_file = "resources/dark/arrowDownPressed.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1814,7 +1681,7 @@ style "styleArrow6" {
 			function		= ARROW
 			state		= INSENSITIVE
 			recolorable	= TRUE
-			overlay_file	= "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border	= { 0, 0, 0, 0 }
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -1863,7 +1730,6 @@ style "styleButtonOutsetOnly" {
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#}
     }
 }
@@ -1874,34 +1740,33 @@ style "styleButtonOutsetOnly6" {
 		image {
 			function = BOX
 			state = NORMAL
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = INSENSITIVE
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = ACTIVE
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#}
     }
 }
@@ -1913,34 +1778,33 @@ style "styleButtonOutsetOnly6" {
 		image {
 			function = BOX
 			state = NORMAL
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = PRELIGHT
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = INSENSITIVE
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		image {
 			function = BOX
 			state = ACTIVE
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
 		#image {
 			#function = FOCUS
-			#file = "null.png"
 		#}
     }
 }
@@ -1954,8 +1818,7 @@ style "styleOutsetGreen" {
 		image {
 			function = BOX
 			#these menubar items stuff are all cde colorset 6 so resources/colorset6 directory
-			#file = "menubar/menubar.png"
-			file = "resources/colorset6/button.png"
+			file = "resources/dark/button.png"
 			border = {3, 3, 3, 3}
 			stretch = TRUE
 		}
@@ -1967,54 +1830,46 @@ style "styleInsetGreen" {
 	engine "pixmap" {
 		image {
 			function = BOX
-			#file = "menubar/menubarmenuitem.png"
-			file = "resources/colorset6/buttonPressed.png"
+			file = "resources/dark/buttonPressed.png"
 			border = {3, 3, 3, 3}
 			stretch	= TRUE
 		}
 		image {
 			function = HLINE
-			 #file = "menubar/line-h.png"
-	 		file = "resources/colorset6/separatorHorizontal.png"
+	 		file = "resources/dark/separatorHorizontal.png"
 			border = {0, 0, 0, 0}
 			stretch = TRUE
 		}
 		image {
 			function = VLINE
-			 #file = "menubar/line-v.png"
-	 		file = "resources/colorset6/separatorVertical.png"
+	 		file = "resources/dark/separatorVertical.png"
 			border = {0, 0, 0, 0}
 			stretch = TRUE
 		}
 		image {
 			function = ARROW
-			#overlay_file = "/arrow/arrow-up.png"
-			#overlay_file = "../resources/arrowup.png"
-			overlay_file = "resources/colorset6/arrowUp.png"
+			overlay_file = "resources/dark/arrowUp.png"
 			overlay_border = {3,3,3,3}
 			overlay_stretch = FALSE
 			arrow_direction	= UP
 		}
 		image {
 			function = ARROW
-			#overlay_file = "/arrow/arrow-down.png"
-			overlay_file = "resources/colorset6/arrowDown.png"
+			overlay_file = "resources/dark/arrowDown.png"
 			overlay_border = {3,3,3,3}
 			overlay_stretch	= FALSE
 			arrow_direction	= DOWN
 		}
 		image {
 			function = ARROW
-			#overlay_file = "/arrow/arrow-left.png"
-			overlay_file = "resources/colorset6/arrowLeft.png"
+			overlay_file = "resources/dark/arrowLeft.png"
 			overlay_border = {3,3,3,3}
 			overlay_stretch	= FALSE
 			arrow_direction	= LEFT
 		}
 		image {
 			function = ARROW
-			#overlay_file = "/arrow/arrow-right.png"
-			overlay_file = "resources/colorset6/arrowRight.png"
+			overlay_file = "resources/dark/arrowRight.png"
 			overlay_border = {3,3,3,3}
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
@@ -2029,32 +1884,28 @@ style "styleOptionMenuBeam" {
 		image {
 			function        = TAB
 			state           = NORMAL
-			#overlay_file    = "resources/pan-down.png"
-			overlay_file    = "resources/colorset6/comboBoxBeam.png"
+			overlay_file    = "resources/dark/comboBoxBeam.png"
 			overlay_stretch = FALSE
 		}
 
 		image {
 			function        = TAB
 			state           = PRELIGHT
-			#overlay_file    = "resources/pan-down.png"
-			overlay_file    = "resources/colorset6/comboBoxBeam.png"
+			overlay_file    = "resources/dark/comboBoxBeam.png"
 			overlay_stretch = FALSE
 		}
 
 		image {
 			function        = TAB
 			state           = ACTIVE
-			#overlay_file    = "resources/pan-down.png"
-			overlay_file    = "resources/colorset6/comboBoxBeam.png"
+			overlay_file    = "resources/dark/comboBoxBeam.png"
 			overlay_stretch = FALSE
 		}
 
 		image {
 			function        = TAB
 			state           = INSENSITIVE
-			#overlay_file    = "resources/pan-down-insensitive.png"
-			overlay_file    = "resources/colorset6/comboBoxBeam.png"
+			overlay_file    = "resources/dark/comboBoxBeam.png"
 			overlay_stretch = FALSE
 		}
 	}
@@ -2073,8 +1924,6 @@ style "styleFrame" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= IN
-			#file		= "shadow1.png"
-			#file     = "resources/frameStandAlone.png"
 			file     = "resources/frameSHADOWIn.png"
 			border		= { 2, 2, 2, 2}
 			stretch		= TRUE
@@ -2083,8 +1932,6 @@ style "styleFrame" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= OUT
-			#file		= "shadow2.png"
-			#file     = "resources/frameStandAlone.png"
 			file     = "resources/frameSHADOWOut.png"
 			border		= { 2, 2, 2, 2 }
 			stretch		= TRUE
@@ -2093,8 +1940,6 @@ style "styleFrame" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= ETCHED_IN
-			#file		= "frame_box_inset.png"
-			#file     = "resources/frameStandAlone.png"
 			file     = "resources/frameStandAloneOut.png"
 			border		= { 2, 2, 2, 2}
 			stretch		= TRUE
@@ -2103,8 +1948,6 @@ style "styleFrame" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= ETCHED_OUT
-			#file		= "frame_box_outset.png"
-			#file     = "resources/frameStandAloneOut.png"
 			file     = "resources/frameStandAlone.png"
 			border		= { 2, 2, 2, 2 }
 			stretch		= TRUE
@@ -2120,13 +1963,12 @@ style "styleFrame" {
 			stretch		= TRUE
 			gap_start_file  = "resources/frameGapTopStart.png"
 			gap_start_border= { 1, 0, 0, 0 }
-			gap_end_file	= "resources/frameGapTopEnd.png"
+			gap_end_file = "resources/frameGapTopEnd.png"
 			gap_end_border  = { 0, 2, 0, 0 }
 			gap_side	= TOP
 		}
 	}
 }
-
 
 style "styleFrame6" {
 	engine "pixmap" {
@@ -2140,9 +1982,7 @@ style "styleFrame6" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= IN
-			#file		= "shadow1.png"
-			#file     = "resources/colorset6/frameStandAlone.png"
-			file     = "resources/colorset6/frameSHADOWIn.png"
+			file     = "resources/dark/frameSHADOWIn.png"
 			border		= { 2, 2, 2, 2}
 			stretch		= TRUE
 		}
@@ -2150,9 +1990,7 @@ style "styleFrame6" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= OUT
-			#file		= "shadow2.png"
-			#file     = "resources/colorset6/frameStandAlone.png"
-			file     = "resources/colorset6/frameSHADOWOut.png"
+			file     = "resources/dark/frameSHADOWOut.png"
 			border		= { 2, 2, 2, 2 }
 			stretch		= TRUE
 		}   
@@ -2160,9 +1998,7 @@ style "styleFrame6" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= ETCHED_IN
-			#file		= "frame_box_inset.png"
-			#file     = "resources/colorset6/frameStandAlone.png"
-			file     = "resources/colorset6/frameStandAloneOut.png"
+			file     = "resources/dark/frameStandAloneOut.png"
 			border		= { 2, 2, 2, 2}
 			stretch		= TRUE
 		}
@@ -2170,9 +2006,7 @@ style "styleFrame6" {
 			function	= SHADOW
 			recolorable	= FALSE
 			shadow		= ETCHED_OUT
-			#file		= "frame_box_outset.png"
-			#file     = "resources/colorset6/frameStandAloneOut.png"
-			file     = "resources/colorset6/frameStandAlone.png"
+			file     = "resources/dark/frameStandAlone.png"
 			border		= { 2, 2, 2, 2 }
 			stretch		= TRUE
 		}
@@ -2182,12 +2016,12 @@ style "styleFrame6" {
 		image {
 			function	= SHADOW_GAP
 			recolorable	= TRUE
-			file		= "resources/colorset6/frameBoxInset.png"
+			file		= "resources/dark/frameBoxInset.png"
 			border		= { 2, 2, 2, 2 }
 			stretch		= TRUE
-			gap_start_file  = "resources/colorset6/frameGapTopStart.png"
+			gap_start_file  = "resources/dark/frameGapTopStart.png"
 			gap_start_border= { 1, 0, 0, 0 }
-			gap_end_file	= "resources/colorset6/frameGapTopEnd.png"
+			gap_end_file = "resources/dark/frameGapTopEnd.png"
 			gap_end_border  = { 0, 2, 0, 0 }
 			gap_side	= TOP
 		}
@@ -2208,17 +2042,12 @@ style "styleSeparator" {
 			function = VLINE
 			recolorable = TRUE
 			file = "resources/separatorVertical.png"
-		      	#file     = "resources/frameStandAlone.png"
-		      	#overlay_file     = "resources/frameStandAlone.png"
 			border = {0,0,0,0}
 			stretch = TRUE
 		}
 		image {
 			function = HLINE
 			recolorable = TRUE
-		      	#file     = "resources/frameStandAlone.png"
-			#overlay_file     = "resources/frameStandAlone.png"
-			#file = "/menu/line-h.png"
 			file = "resources/separatorHorizontal.png"
 			border = {0,0,0,0}
 			stretch = TRUE
@@ -2238,19 +2067,14 @@ style "styleSeparator6" {
 		image {
 			function = VLINE
 			recolorable = TRUE
-			file = "resources/colorset6/separatorVertical.png"
-		      	#file     = "resources/colorset6/frameStandAlone.png"
-		      	#overlay_file     = "resources/colorset6/frameStandAlone.png"
+			file = "resources/dark/separatorVertical.png"
 			border = {0,0,0,0}
 			stretch = TRUE
 		}
 		image {
 			function = HLINE
 			recolorable = TRUE
-		      	#file     = "resources/colorset6/frameStandAlone.png"
-			#overlay_file     = "resources/colorset6/frameStandAlone.png"
-			#file = "/menu/line-h.png"
-			file = "resources/colorset6/separatorHorizontal.png"
+			file = "resources/dark/separatorHorizontal.png"
 			border = {0,0,0,0}
 			stretch = TRUE
 		}
@@ -2344,9 +2168,7 @@ style "styleHandle"{
 		#image {
 			#function        = HANDLE
 			#detail          = "handlebox"
-			#file    = "resources/button.png"
 			#stretch = TRUE
-			#overlay_file    = "resources/button.png"
 			#overlay_stretch = TRUE
 			#border = {1,1,1,1}
 			#overlay_border = {1,1,1,1}
@@ -2355,16 +2177,11 @@ style "styleHandle"{
 		#image {
 			#function	= BOX
 			#detail		= "handlebox_bin"
-			#file		= "shadow2.png"
-			#file		= "sblank.png"
-			#file    = "resources/button.png"
 			#border		= { 1, 1, 1, 1 }
 			#stretch		= TRUE
 		#}
 		image {
 			function    = HANDLE
-			###file        = "resources/handle-horz.png"
-			###file    = "resources/button.png"
 			file = "resources/handleSeparatorHorizontal.png"
 			###border      = {0, 0, 4, 4}
 			#border = {0,0,0,0}
@@ -2375,9 +2192,6 @@ style "styleHandle"{
 		}
 		image {
 			function    = HANDLE
-			####file        = "resources/handle-vert.png"
-			####file    = "resources/button.png"
-			#file = "resources/separatorVertical.png"
 			file = "resources/handleSeparatorVertical.png"
 			####border      = {4, 4, 0, 0}
 			#border = {0,0,0,0}
@@ -2389,7 +2203,6 @@ style "styleHandle"{
 			#grip in the bottom right corner to resize a box
 			#nothing to do with handles
 			function = RESIZE_GRIP
-			#file    = "resources/button.png"
 			overlay_file = "resources/resizer.png"
 			overlay_stretch = FALSE
 			#border = {1,1,1,1}
@@ -2404,9 +2217,7 @@ style "styleHandle6"{
 		#image {
 			#function        = HANDLE
 			#detail          = "handlebox"
-			#file    = "resources/colorset6/button.png"
 			#stretch = TRUE
-			#overlay_file    = "resources/colorset6/button.png"
 			#overlay_stretch = TRUE
 			#border = {1,1,1,1}
 			#overlay_border = {1,1,1,1}
@@ -2415,55 +2226,37 @@ style "styleHandle6"{
 		#image {
 			#function	= BOX
 			#detail		= "handlebox_bin"
-			#file		= "shadow2.png"
-			#file		= "sblank.png"
-			#file    = "resources/colorset6/button.png"
 			#border		= { 1, 1, 1, 1 }
 			#stretch		= TRUE
 		#}
 		image {
 			function    = HANDLE
-			###file        = "resources/handle-horz.png"
-			###file    = "resources/colorset6/button.png"
-			file = "resources/colorset6/handleSeparatorHorizontal.png"
+			file = "resources/dark/handleSeparatorHorizontal.png"
 			###border      = {0, 0, 4, 4}
 			#border = {0,0,0,0}
 			orientation = HORIZONTAL
-			overlay_file    = "resources/colorset6/handleButton.png"
+			overlay_file    = "resources/dark/handleButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			function    = HANDLE
-			####file        = "resources/handle-vert.png"
-			####file    = "resources/colorset6/button.png"
-			#file = "resources/colorset6/separatorVertical.png"
-			file = "resources/colorset6/handleSeparatorVertical.png"
+			file = "resources/dark/handleSeparatorVertical.png"
 			####border      = {4, 4, 0, 0}
 			#border = {0,0,0,0}
 			orientation = VERTICAL
-			overlay_file    = "resources/colorset6/handleButton.png"
+			overlay_file    = "resources/dark/handleButton.png"
 			overlay_stretch = FALSE
 		}
 		image {
 			#grip in the bottom right corner to resize a box
 			#nothing to do with handles
 			function = RESIZE_GRIP
-			#file    = "resources/colorset6/button.png"
-			overlay_file = "resources/colorset6/resizer.png"
+			overlay_file = "resources/dark/resizer.png"
 			overlay_stretch = FALSE
 			#border = {1,1,1,1}
 		}
 	}	
 }
-
-
-
-
-
-
-
-
-
 
 #############################################################################
 
@@ -2596,8 +2389,6 @@ widget_class "*ialog*Combo*.*Button*"		style "styleButtonOutsetOnly6"
 #widget_class "*Combo*"				style "appearsAsListFalse"
 #widget_class "*Combo*Entry*"			style "appearsAsListTrue"
 
-
-
 #############bg and edge around the menubar
 widget_class "*GtkMenuBar*" 			style "styleOutsetGreen"
 ############bg and edge around entire popup menu 
@@ -2624,26 +2415,3 @@ widget_class "*ialog*oolbar*" 			style "styleButtonOutsetOnly6"
 ##############HMM BUTTONS IN THE TOOLBAR STAY FLAT FOR SOME REASON TODO
 widget_class "*oolbar*utton*" 			style "styleButton"
 widget_class "*ialog*oolbar*utton*" 		style "styleButton6"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
