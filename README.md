@@ -4,7 +4,7 @@
 
 GTK theme based on the CDE desktop used in Solaris 9's Common Desktop Environment
 
-![solaris-9](https://github.com/B00merang-Project/gallery/raw/master/Solaris%2010%20CDE%20(3).png)
+![solaris-9](https://github.com/B00merang-Project/gallery/raw/master/Solaris%209%20(3).png)
 
 **Maintainer :** [Elbullazul](https://github.com/Elbullazul)
 
