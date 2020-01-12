@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Solaris 9
+Comment=A GTK theme based on Solaris 9
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Solaris 9
+MetacityTheme=Solaris 9
+IconTheme=CDE
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:
