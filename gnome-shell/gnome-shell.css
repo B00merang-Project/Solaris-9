@@ -616,8 +616,7 @@ StScrollBar {
 		color: black;
 		transition-duration: 100ms;
 		text-shadow:none;
-		icon-shadow:none;
-}
+		icon-shadow:none; }
 		#panel .panel-button .app-menu-icon {
 			-st-icon-style: regular;
 			margin-left: 4px;
@@ -1228,7 +1227,7 @@ StScrollBar {
 .grid-search-result:hover .overview-icon,
 .grid-search-result:focus .overview-icon,
 .grid-search-result:selected .overview-icon {
-	background-color: transparent;
+	background-color: #000000;
 }
 
 #dash .app-well-app .overview-icon {
