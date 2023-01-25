@@ -17,7 +17,7 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-image, image:disabled, label, label:disabled, box, box:disabled {
+image, label, box {
   background-color: transparent; }
 
 .view {
@@ -743,18 +743,18 @@ headerbar {
     headerbar .subtitle:backdrop {
       color: rgba(0, 0, 0, 0.7); }
   headerbar button {
-    padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
+    border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    border-color: #74798e;
-    border-top-color: #e7e8ed;
-    border-left-color: #e7e8ed;
-    background-color: #AEB2C3;
-    outline-color: #B24D7A;
-    outline-offset: 2px;
-    outline-style: solid; }
+    box-shadow: none;
+    background-color: transparent; }
+    headerbar button:hover {
+      color: #000000;
+      background-color: #AEB2C3;
+      border-color: #74798e;
+      border-top-color: #e7e8ed;
+      border-left-color: #e7e8ed;
+      background-color: #AEB2C3; }
     headerbar button:active, headerbar button:checked {
       color: #000000;
       border-top-color: #74798e;
@@ -768,13 +768,20 @@ headerbar {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a9; }
     headerbar button:disabled {
-      color: #2c2d31;
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
-  headerbar entry {
-    padding: 4px 8px; }
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+      background-color: transparent; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+
+windowcontrols {
+  border-spacing: 6px; }
+  windowcontrols.start:not(.empty):dir(ltr), windowcontrols.end:not(.empty):dir(rtl) {
+    margin-right: 7px; }
+  windowcontrols.start:not(.empty):dir(rtl), windowcontrols.end:not(.empty):dir(ltr) {
+    margin-left: 7px; }
+  windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
     min-width: 19px;
     min-height: 19px;
     color: transparent;
@@ -786,17 +793,17 @@ headerbar {
     -gtk-icon-shadow: none;
     background-position: center;
     background-repeat: no-repeat; }
-  headerbar .titlebutton.close {
+  windowcontrols button.close {
     background-image: url("assets/close-focused.png"); }
-    headerbar .titlebutton.close:backdrop {
+    windowcontrols button.close:backdrop {
       background-image: url("assets/close-unfocused.png"); }
-  headerbar .titlebutton.minimize {
+  windowcontrols button.minimize {
     background-image: url("assets/minimize-focused.png"); }
-    headerbar .titlebutton.minimize:backdrop {
+    windowcontrols button.minimize:backdrop {
       background-image: url("assets/minimize-unfocused.png"); }
-  headerbar .titlebutton.maximize {
+  windowcontrols button.maximize {
     background-image: url("assets/maximize-focused.png"); }
-    headerbar .titlebutton.maximize:backdrop {
+    windowcontrols button.maximize:backdrop {
       background-image: url("assets/maximize-unfocused.png"); }
 
 pathbar > button.text-button, pathbar > button.image-button, pathbar > button {
@@ -1447,7 +1454,7 @@ actionbar {
     padding: 0 12px; }
 
 scrolledwindow > overshoot.top {
-  background-image: radial-gradient(farthest-side at top, black, transparent);
+  background-image: radial-gradient(farthest-side at top, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: top;
@@ -1456,7 +1463,7 @@ scrolledwindow > overshoot.top {
   box-shadow: none; }
 
 scrolledwindow > overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, black, transparent);
+  background-image: radial-gradient(farthest-side at bottom, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1465,7 +1472,7 @@ scrolledwindow > overshoot.bottom {
   box-shadow: none; }
 
 scrolledwindow > overshoot.left {
-  background-image: radial-gradient(farthest-side at left, black, transparent);
+  background-image: radial-gradient(farthest-side at left, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left;
@@ -1474,7 +1481,7 @@ scrolledwindow > overshoot.left {
   box-shadow: none; }
 
 scrolledwindow > overshoot.right {
-  background-image: radial-gradient(farthest-side at right, black, transparent);
+  background-image: radial-gradient(farthest-side at right, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -2113,12 +2120,10 @@ popover.entry-completion > contents {
   padding: 0; }
 
 statusbar {
-  color: #000000;
   border: 1px solid #74798e;
   border-bottom-color: #e7e8ed;
-  border-right-color: #e7e8ed; }
-  statusbar frame > border {
-    border: none; }
+  border-right-color: #e7e8ed;
+  padding: 4px; }
 
 menubutton > button > box {
   border-spacing: 6px; }
