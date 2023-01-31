@@ -84,7 +84,8 @@ label > selection {
   color: #FFFFFF;
   background-color: #000000; }
   label > selection:focus-within {
-    color: #000000; }
+    color: #FFFFFF;
+    background-color: #000000; }
 
 label:disabled {
   color: #575962; }
@@ -600,7 +601,7 @@ searchbar {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #74798e;
-  background-color: #AEB2C3; }
+  background-color: #a4a8bb; }
 
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
@@ -992,21 +993,20 @@ menubar, .menubar {
   menubar:backdrop, .menubar:backdrop {
     color: #000000;
     background-color: #AEB2C3; }
-
-menubar > menuitem, .menubar > menuitem {
-  padding: 3px 5px;
-  border: none;
-  color: #000000;
-  background-color: transparent; }
-  menubar > menuitem:hover, .menubar > menuitem:hover {
-    color: #FFFFFF;
-    background-color: #000000; }
-  menubar > menuitem:disabled, .menubar > menuitem:disabled {
-    color: #575962;
-    background-color: transparent; }
-  menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+  menubar > menuitem, .menubar > menuitem {
+    padding: 3px 5px;
+    border: none;
     color: #000000;
     background-color: transparent; }
+    menubar > menuitem:hover, .menubar > menuitem:hover {
+      color: #FFFFFF;
+      background-color: #000000; }
+    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+      color: #575962;
+      background-color: transparent; }
+    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+      color: #000000;
+      background-color: transparent; }
 
 notebook {
   padding: 0; }
@@ -1437,8 +1437,7 @@ window.dialog.print drawing {
 window.dialog.print .dialog-action-box {
   margin: 12px; }
 
-frame,
-.frame {
+frame, .frame {
   border: 1px solid #74798e; }
 
 frame {
