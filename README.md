@@ -8,7 +8,6 @@ GTK theme based on the CDE desktop used in Solaris 9's Common Desktop Environmen
 
 ### Supported platforms
 - Any GTK-based desktop
-- No shell-scpecitifc theme (yet)
 - Gnome
 
 ### Manual installation
