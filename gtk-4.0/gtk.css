@@ -1323,22 +1323,22 @@ check, radio {
   border-style: none;
   background-color: transparent; }
 
-check, .check {
+check {
   -gtk-icon-source: url("assets/checkbox-unchecked.png"); }
-  check:disabled, .check:disabled {
+  check:disabled {
     -gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
-  check:checked, .check:checked {
+  check:checked {
     -gtk-icon-source: url("assets/checkbox-checked.png"); }
-    check:checked:disabled, .check:checked:disabled {
+    check:checked:disabled {
       -gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
 
-radio, .radio {
+radio {
   -gtk-icon-source: url("assets/radio-unchecked.png"); }
-  radio:disabled, .radio:disabled {
+  radio:disabled {
     -gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
-  radio:checked, .radio:checked {
+  radio:checked {
     -gtk-icon-source: url("assets/radio-checked.png"); }
-    radio:checked:disabled, .radio:checked:disabled {
+    radio:checked:disabled {
       -gtk-icon-source: url("assets/radio-checked-disabled.png"); }
 
 scale {
