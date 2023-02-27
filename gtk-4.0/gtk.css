@@ -447,14 +447,14 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 0px;
-  color: #000000;
-  border-color: #74798e;
+  border: 1px solid #74798e;
   border-top-color: #e7e8ed;
   border-left-color: #e7e8ed;
+  color: #000000;
   background-color: #AEB2C3;
+  background-image: none;
+  box-shadow: none;
   /*
   outline-color: $titlebar_bg_color;
   outline-offset: 2px;
@@ -479,8 +479,9 @@ button {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    box-shadow: none;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     button.flat:hover {
       color: #000000;
       background-color: #AEB2C3;
@@ -507,12 +508,10 @@ button {
       background-color: transparent; }
 
 button.destructive-action {
-  border: 1px;
-  border-style: solid;
-  border-color: #ca9292;
+  border-radius: 0px;
+  border: 1px solid #ca9292;
   border-right-color: #642c2c;
   border-bottom-color: #642c2c;
-  border-radius: 0px;
   color: #f6eded;
   background-color: #A74949; }
   button.destructive-action:hover {
@@ -663,8 +662,9 @@ toolbar {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    box-shadow: none;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     toolbar button.flat:hover {
       color: #000000;
       background-color: #AEB2C3;
@@ -818,8 +818,9 @@ headerbar {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    box-shadow: none;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     headerbar button:hover {
       color: #000000;
       background-color: #AEB2C3;
