@@ -1072,28 +1072,29 @@ menu, .menu {
       menu menuitem accelerator:disabled, .menu menuitem accelerator:disabled {
         color: #575962; }
 
-menubar, .menubar {
-  padding: 0;
+menubar {
+  padding: 0px;
   border: 1px solid #74798e;
-  color: #000000;
-  background-color: #AEB2C3;
   border-top-color: #e7e8ed;
-  border-left-color: #e7e8ed; }
-  menubar:backdrop, .menubar:backdrop {
+  border-left-color: #e7e8ed;
+  color: #000000;
+  background-color: #AEB2C3; }
+  menubar:backdrop {
     color: #000000;
     background-color: #AEB2C3; }
-  menubar > menuitem, .menubar > menuitem {
+  menubar > item {
     padding: 3px 5px;
+    min-height: 12px;
     border: none;
     color: #000000;
     background-color: transparent; }
-    menubar > menuitem:hover, .menubar > menuitem:hover {
+    menubar > item:selected {
       color: #FFFFFF;
       background-color: #000000; }
-    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+    menubar > item:disabled {
       color: #575962;
       background-color: transparent; }
-    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+    menubar > item:backdrop {
       color: #000000;
       background-color: transparent; }
 
@@ -1321,7 +1322,9 @@ check, radio {
   min-height: 11px;
   min-width: 11px;
   border-style: none;
-  background-color: transparent; }
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
 
 check {
   -gtk-icon-source: url("assets/checkbox-unchecked.png"); }
