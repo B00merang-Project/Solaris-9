@@ -1020,10 +1020,14 @@ popover.background, popover.background:backdrop {
 popover > arrow,
 popover > contents {
   border: 1px solid #74798e;
+  border-top-color: #e7e8ed;
+  border-left-color: #e7e8ed;
   color: #000000;
   background-color: #AEB2C3;
   background-clip: padding-box;
   box-shadow: none; }
+  popover > contents > scrolledwindow {
+    border-width: 0px; }
 
 popover > contents {
   border-radius: 0px; }
@@ -1117,7 +1121,8 @@ menubar {
     min-height: 12px;
     border: none;
     color: #000000;
-    background-color: transparent; }
+    background-color: transparent;
+    box-shadow: none; }
     menubar > item:selected {
       color: #FFFFFF;
       background-color: #000000; }
@@ -1346,7 +1351,7 @@ checkbutton.text-button, radiobutton.text-button {
   outline-offset: 0; }
 
 check, radio {
-  margin: 4px;
+  margin: 0 4px;
   min-height: 11px;
   min-width: 11px;
   border-style: none;
