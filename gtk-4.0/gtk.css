@@ -1484,14 +1484,14 @@ progressbar {
   font-size: smaller;
   color: gray; }
   progressbar > trough {
+    border-radius: 0px;
     border: 1px solid #74798e;
-    border-radius: 0px;
-    background-color: #AEB2C3;
     border-bottom-color: #e7e8ed;
-    border-right-color: #e7e8ed; }
+    border-right-color: #e7e8ed;
+    background-color: #AEB2C3; }
   progressbar > trough > progress {
-    border: none;
     border-radius: 0px;
+    border: none;
     background-color: rgba(0, 0, 0, 0.15); }
   progressbar.horizontal > trough {
     min-width: 150px; }
